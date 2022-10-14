@@ -1,0 +1,10 @@
+@import 'bases.css';
+@import 'header.css';
+
+@import 'accueil.css';
+@import 'spectacles.css';
+@import 'boutique.css';
+@import 'contact.css';
+
+@import 'footer.css';
+@import 'overrides.css';
