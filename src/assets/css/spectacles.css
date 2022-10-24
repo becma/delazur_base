@@ -1,0 +1,58 @@
+h1{
+    color: #d679a6;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.salles{
+    background-color: rgba(128, 107, 7, 0.5);
+    border: 1px solid #d679a6;
+    width: 475px;
+    margin-top: 20px;
+}
+
+button{
+    background-color: #d679a6;
+    border: 1px solid #f5c555;
+    float: right;
+    width: 120px;
+    height: 50px;
+    margin-right: 25px;
+    margin-top: 30px;
+}
+
+button:hover{
+    background: white;
+}
+
+button a{
+    text-decoration: none;
+    color: black;
+}
+
+h2{
+    padding: 5px 0 0 20px;
+    margin-bottom: 0;
+}
+
+.date{
+    font-weight: bold;
+    padding: 0 0 0 20px;
+    margin-top: 0%;
+}
+
+.ville{
+    font-size: 1rem;
+    padding: 0 0 5px 20px;
+}
+
+#modale{
+    background-color: #f5c555;
+    padding: 2px;
+    margin-top: 30px;
+}
+
+#textemodale{
+    font-size: 2rem;
+    text-align: center;
+}
