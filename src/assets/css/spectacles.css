@@ -3,57 +3,19 @@ h1{
     text-align: center;
     padding-bottom: 50px;
     font-family: 'Damion', serif;
-}
-.container {  
-    width: 100%;
-    height: auto;
-    display:grid;
-    align-content: center;
-    align-items: center;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 1fr);
+    font-size: 4em;
+    letter-spacing: 8px;
 }
 .salles{
     background-color: rgba(128, 107, 7, 0.5);
     border: 1px solid #d679a6;
-    width: 475px;
-    margin: 10px 10px 0px 10px;
+    margin: 10px 10px 0px;
 }
-#salle-1 { 
-    grid-area: 1 / 5 / 2 / 9;
-}
-#salle-2 { 
-    grid-area: 2 / 4 / 3 / 8;
-}
-#salle-3 { 
-    grid-area: 3 / 6 / 4 / 10;
-}
-#salle-4 { 
-    grid-area: 4 / 2 / 5 / 6;
-}
-#salle-5 { 
-    grid-area: 5 / 4 / 6 / 8;
-}
-#salle-6 { 
-    grid-area: 6 / 5 / 7 / 9;
-}
-#salle-7 { 
-    grid-area: 7 / 6 / 8 / 10;
-}
-#salle-8 { 
-    grid-area: 8 / 3 / 9 / 7;
-}
-#salle-9 { 
-    grid-area: 8 / 7 / 9 / 11;
-}
-#salle-10 { 
-    grid-area: 9 / 5 / 10 / 9;
-}
-#salle-11 { 
-    grid-area: 10 / 6 / 11 / 10;
-}
-#salle-12 { 
-    grid-area: 11 / 5 / 12 / 9;
+.container {  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 30px;
 }    
 button{
     background-color: #d679a6;
@@ -63,6 +25,9 @@ button{
     height: 50px;
     margin-right: 25px;
     margin-top: 30px;
+}
+button:focus{
+    background: white;
 }
 button:hover{
     background: white;
@@ -84,12 +49,160 @@ h2{
     font-size: 1rem;
     padding: 0 0 5px 20px;
 }
-#modale{
+
+/* Bouton s'abonner en bas de page */
+#btn-abon{
     background-color: #f5c555;
-    padding: 2px;
-    margin-top: 30px;
-}
-#textemodale{
-    font-size: 2rem;
+    padding: 5px;
+    margin: 0 auto;
     text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    letter-spacing: 10px;
+    width: 80vw;
+}
+
+#btn-abon:focus {
+    background-color: #d679a6;
+}
+
+#btn-abon:hover {
+    background-color: #d679a6;
+    cursor: pointer;
+}
+
+/*Boîte de la modale pour l'afficher par-dessus le reste du site*/
+#modale, #modale-inscrit {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: none;
+}
+
+/*Intérieur de la modale*/
+.in-modale{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f5c555;
+    color: white;
+    width: 350px;
+    padding: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+/*Input du courriel*/
+#email {
+    background-color: #f5c555;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 95%;
+    padding: 15px;
+}
+
+#email:focus {
+    background-color: #d679a6;
+    outline: none;
+    color: white;
+}
+
+::placeholder {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*Boutons soumettre et fermer*/
+#btn-soumettre, #btn-fermer {
+    background-color: white;
+    border: none;
+    padding: 15px;
+    text-transform: uppercase;
+    display: block;
+    margin: 20px auto 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#btn-soumettre:focus, #btn-fermer:focus {
+    background-color: #d679a6;
+    outline: none;
+}
+
+#btn-soumettre:hover, #btn-fermer:hover {
+    background-color: #d679a6;
+}
+
+/*X pour fermer en haut à droite*/
+.x-ferme {
+    float: right;
+    font-size: 15px;
+    color: black;
+    margin: -20px -15px 0 0;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.x-ferme:hover {
+    color: #d679a6;
+    border-bottom: 2px solid #d679a6;
+}
+
+/*Breakpoint pour affichage des spectacle en grid*/
+@media screen and (min-width: 1200px) {
+    .container {  
+        width: 100%;
+        height: auto;
+        display:grid;
+        align-content: center;
+        align-items: center;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(11, 1fr);
+    }
+    #salle-1 { 
+        grid-area: 1 / 5 / 2 / 9;
+    }
+    #salle-2 { 
+        grid-area: 2 / 4 / 3 / 8;
+    }
+    #salle-3 { 
+        grid-area: 3 / 6 / 4 / 10;
+    }
+    #salle-4 { 
+        grid-area: 4 / 2 / 5 / 6;
+    }
+    #salle-5 { 
+        grid-area: 5 / 4 / 6 / 8;
+    }
+    #salle-6 { 
+        grid-area: 6 / 5 / 7 / 9;
+    }
+    #salle-7 { 
+        grid-area: 7 / 6 / 8 / 10;
+    }
+    #salle-8 { 
+        grid-area: 8 / 3 / 9 / 7;
+    }
+    #salle-9 { 
+        grid-area: 8 / 7 / 9 / 11;
+    }
+    #salle-10 { 
+        grid-area: 9 / 5 / 10 / 9;
+    }
+    #salle-11 { 
+        grid-area: 10 / 6 / 11 / 10;
+    }
+    #salle-12 { 
+        grid-area: 11 / 5 / 12 / 9;
+    }  
 }
