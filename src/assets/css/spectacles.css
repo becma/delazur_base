@@ -9,49 +9,49 @@ h1{
     display:grid;
     align-content: center;
     align-items: center;
-    grid-template-columns: repeat (12, 1fr);
-    grid-template-rows: repeat (12, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
 }
 .salles{
     background-color: rgba(128, 107, 7, 0.5);
     border: 1px solid #d679a6;
     width: 475px;
-    margin-top: 20px;   
+    margin: 10px 10px 0px 10px;
 }
-#Salle-1 { 
+#salle-1 { 
     grid-area: 1 / 5 / 2 / 9;
 }
-#Salle-2 { 
+#salle-2 { 
     grid-area: 2 / 4 / 3 / 8;
 }
-#Salle-3 { 
+#salle-3 { 
     grid-area: 3 / 6 / 4 / 10;
 }
-#Salle-4 { 
+#salle-4 { 
     grid-area: 4 / 2 / 5 / 6;
 }
-#Salle-5 { 
+#salle-5 { 
     grid-area: 5 / 4 / 6 / 8;
 }
-#Salle-6 { 
+#salle-6 { 
     grid-area: 6 / 5 / 7 / 9;
 }
-#Salle-7 { 
+#salle-7 { 
     grid-area: 7 / 6 / 8 / 10;
 }
-#Salle-8 { 
-    grid-area: 8 / 4 / 9 / 8;
+#salle-8 { 
+    grid-area: 8 / 3 / 9 / 7;
 }
-#Salle-9 { 
-    grid-area: 8 / 8 / 9 / 12;
+#salle-9 { 
+    grid-area: 8 / 7 / 9 / 11;
 }
-#Salle-10 { 
+#salle-10 { 
     grid-area: 9 / 5 / 10 / 9;
 }
-#Salle-11 { 
+#salle-11 { 
     grid-area: 10 / 6 / 11 / 10;
 }
-#Salle-12 { 
+#salle-12 { 
     grid-area: 11 / 5 / 12 / 9;
 }    
 button{
