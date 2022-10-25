@@ -1,0 +1,94 @@
+h1{
+    color: #d679a6;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.container {  
+    width: 100%;
+    height: auto;
+    display:grid;
+    align-content: center;
+    align-items: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+.salles{
+    background-color: rgba(128, 107, 7, 0.5);
+    border: 1px solid #d679a6;
+    width: 475px;
+    margin: 10px 10px 0px 10px;
+}
+#salle-1 { 
+    grid-area: 1 / 5 / 2 / 9;
+}
+#salle-2 { 
+    grid-area: 2 / 4 / 3 / 8;
+}
+#salle-3 { 
+    grid-area: 3 / 6 / 4 / 10;
+}
+#salle-4 { 
+    grid-area: 4 / 2 / 5 / 6;
+}
+#salle-5 { 
+    grid-area: 5 / 4 / 6 / 8;
+}
+#salle-6 { 
+    grid-area: 6 / 5 / 7 / 9;
+}
+#salle-7 { 
+    grid-area: 7 / 6 / 8 / 10;
+}
+#salle-8 { 
+    grid-area: 8 / 3 / 9 / 7;
+}
+#salle-9 { 
+    grid-area: 8 / 7 / 9 / 11;
+}
+#salle-10 { 
+    grid-area: 9 / 5 / 10 / 9;
+}
+#salle-11 { 
+    grid-area: 10 / 6 / 11 / 10;
+}
+#salle-12 { 
+    grid-area: 11 / 5 / 12 / 9;
+}    
+button{
+    background-color: #d679a6;
+    border: 1px solid #f5c555;
+    float: right;
+    width: 120px;
+    height: 50px;
+    margin-right: 25px;
+    margin-top: 30px;
+}
+button:hover{
+    background: white;
+}
+button a{
+    text-decoration: none;
+    color: black;
+}
+h2{
+    padding: 5px 0 0 20px;
+    margin-bottom: 0;
+}
+.date{
+    font-weight: bold;
+    padding: 0 0 0 20px;
+    margin-top: 0%;
+}
+.ville{
+    font-size: 1rem;
+    padding: 0 0 5px 20px;
+}
+#modale{
+    background-color: #f5c555;
+    padding: 2px;
+    margin-top: 30px;
+}
+#textemodale{
+    font-size: 2rem;
+    text-align: center;
+}
