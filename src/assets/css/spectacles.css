@@ -61,7 +61,7 @@ h2{
     font-family: 'Montserrat', sans-serif;
     font-size: 1.8rem;
     letter-spacing: 10px;
-    width: 80vw;
+    margin: 10px 10px 0px;
 }
 
 #btn-abon:focus {
@@ -167,7 +167,7 @@ h3 {
         align-content: center;
         align-items: center;
         grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(11, 1fr);
+        grid-template-rows: repeat(12, 1fr);
     }
     #salle-1 { 
         grid-area: 1 / 5 / 2 / 9;
@@ -191,10 +191,10 @@ h3 {
         grid-area: 7 / 6 / 8 / 10;
     }
     #salle-8 { 
-        grid-area: 8 / 3 / 9 / 7;
+        grid-area: 8 / 4 / 9 / 8;
     }
     #salle-9 { 
-        grid-area: 8 / 7 / 9 / 11;
+        grid-area: 8 / 8 / 9 / 12;
     }
     #salle-10 { 
         grid-area: 9 / 5 / 10 / 9;
@@ -205,4 +205,9 @@ h3 {
     #salle-12 { 
         grid-area: 11 / 5 / 12 / 9;
     }  
+
+    #btn-abon{
+        grid-column: 2 / 12;
+        margin: 10px 10px 0px;
+    }
 }
