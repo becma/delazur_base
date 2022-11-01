@@ -1,0 +1,79 @@
+@media screen and (max-width: 1200px){
+    form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+}
+
+form{
+     background-color: #f5c555;
+     padding-top: 20px;
+     /*il faut placer la grid*/
+}
+
+fieldset{
+    margin: 30px;
+    padding: 80px 40px 40px 40px;
+    border: none;
+}
+
+legend{
+    text-align: center;
+}
+
+label{
+    color: white;
+}
+
+input{
+    background-color: #f5c555;
+    border-style: none;
+    border-bottom: 1px solid black;
+    padding: 20px 0px 10px 0px;
+    margin-bottom: 40px;
+}
+
+#carre1, #carre3{
+    border: 2px solid #d679a6;
+}
+
+#carre2{
+    border: 2px solid #d679a6;
+    background-color: #D9967B;
+}
+
+#carre2 div > input, #carre2 div > select{
+    background-color: #D9967B;
+}
+
+#province{
+    border: 2px solid black;
+    height: 40px;
+}
+
+#couleur{
+    height: 70px;
+    width: 40px;
+    border: none;
+}
+
+#note{
+    border-bottom: 1px solid black;
+    /*la bordure ne s'affiche pas sous le range*/
+}
+
+#danser{
+    margin-top: 30px;
+}
+
+#reinitialiser, #soumettre{
+    background-color: #f5c555;
+    border: 1px solid black;
+    /*il faudrait mettre un id sur chaque bouton: id="reinitialiser" et id="soumettre" car le CSS des boutons 
+    de la page spectacles est appelé avec le link app.css et les fait apparaître
+    blanc en hover et pourraient apparaître en jaune sur la page spectacle*/ 
+}
+
+/*je m'occupe du CSS pour le range!*/
