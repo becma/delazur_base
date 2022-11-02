@@ -1,100 +1,129 @@
-@media screen and (max-width: 1200px){
-    form{
+@media screen and (max-width: 1200px) {
+  form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-}
-
-form{
-     background-color: #f5c555;
-     padding-top: 20px;
-     /*il faut placer la grid*/
+  }
 }
 
-fieldset{
-    margin: 30px;
-    padding: 40px;
-    border: none;
+form {
+  background-color: #f5c555;
+  padding-top: 20px;
+  /*pourquoi avoir 2 form dans le css?*/
 }
 
-legend{
-    text-align: center;
+fieldset {
+  margin: 30px;
+  padding: 40px;
+  border: none;
+  /*on doit ajouter une border rose si on se fit à la maquette*/
+}
+/*on doit appliquer 1 grid par fieldset, 
+et s'assurer de l'ajuster pour la version mobile*/
+#g1 {
+  display: grid;
+  justify-content: stretch;
+}
+#g2 {
+  display: grid;
+  justify-content: stretch;
+}
+#g3 {
+  display: grid;
+  justify-content: stretch;
+}
+#g4 {
+  display: grid;
+  justify-content: stretch;
+}
+#g5 {
+  display: grid;
+  justify-content: stretch;
 }
 
-label{
-    color: white;
+legend {
+  text-align: center;
 }
 
-input{
-    background-color: #f5c555;
-    border-style: none;
-    border-bottom: 1px solid black;
-    padding: 20px 0px 10px 0px;
-    margin-bottom: 40px;
+legend {
+  text-align: center;
 }
 
-#carre1, #carre3{
-    border: 2px solid #d679a6;
+label {
+  color: white;
 }
 
-#carre2{
-    border: 2px solid #d679a6;
-    background-color: #D9967B;
+input {
+  background-color: #f5c555;
+  border-style: none;
+  border-bottom: 1px solid black;
+  padding: 20px 0px 10px 0px;
+  margin-bottom: 40px;
 }
 
-#carre2 div > input, #carre2 div > select{
-    background-color: #D9967B;
+#carre1,
+#carre3 {
+  border: 2px solid #d679a6;
 }
 
-#province{
-    border: 2px solid black;
-    height: 40px;
+#carre2 {
+  border: 2px solid #d679a6;
+  background-color: #d9967b;
 }
 
-#couleur{
-    height: 70px;
-    width: 40px;
-    border: none;
+#carre2 div > input,
+#carre2 div > select {
+  background-color: #d9967b;
 }
 
+#province {
+  border: 2px solid black;
+  height: 40px;
+}
+
+#couleur {
+  height: 70px;
+  width: 40px;
+  border: none;
+}
 
 /*code pour le Range, à ne pas modifier*/
 #note {
-    height: 20px;
-    -webkit-appearance: none;
-    margin: 12px 0px;
-    padding-left: 10px;
-    padding-right: 10px;
-    width: 35%;
-} 
+  height: 20px;
+  -webkit-appearance: none;
+  margin: 12px 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 35%;
+}
 #note::-webkit-slider-runnable-track {
-    width: 100%;
-    height: 10px;
-    cursor: pointer;
-    background: #d679a6;
-    border-radius: 25px;
+  width: 100%;
+  height: 10px;
+  cursor: pointer;
+  background: #d679a6;
+  border-radius: 25px;
 }
 #note::-webkit-slider-thumb {
-    border: 2px solid #d679a6;
-    height: 32px;
-    width: 32px;
-    border-radius: 24px;
-    background: #fbd273;
-    cursor: pointer;
-    -webkit-appearance: none;
-    margin-top: -12px;
+  border: 2px solid #d679a6;
+  height: 32px;
+  width: 32px;
+  border-radius: 24px;
+  background: #fbd273;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -12px;
 }
 /*code pour le Range, à ne pas pas modifier*/
 
-#danser{
-    margin-top: 30px;
+#danser {
+  margin-top: 30px;
 }
 
-#reset, #submit-form{
-    background-color: #f5c555;
-    border: 1px solid black; 
+#reset,
+#submit-form {
+  background-color: #f5c555;
+  border: 1px solid black;
 }
 
 /*je m'occupe du CSS pour le range!*/
