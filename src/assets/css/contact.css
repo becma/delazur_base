@@ -59,10 +59,34 @@ input{
     border: none;
 }
 
-#note{
-    border-bottom: 1px solid black;
-    /*la bordure ne s'affiche pas sous le range*/
+
+/*code pour le Range, à ne pas modifier*/
+#note {
+    height: 20px;
+    -webkit-appearance: none;
+    margin: 12px 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 35%;
+} 
+#note::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    background: #d679a6;
+    border-radius: 25px;
 }
+#note::-webkit-slider-thumb {
+    border: 2px solid #d679a6;
+    height: 32px;
+    width: 32px;
+    border-radius: 24px;
+    background: #fbd273;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -12px;
+}
+/*code pour le Range, à ne pas pas modifier*/
 
 #danser{
     margin-top: 30px;
