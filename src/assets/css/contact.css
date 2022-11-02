@@ -10,13 +10,12 @@
 form{
      background-color: #f5c555;
      padding-top: 20px;
-     padding-bottom: 100px;
      /*il faut placer la grid*/
 }
 
 fieldset{
     margin: 30px;
-    padding: 80px 40px 40px 40px;
+    padding: 40px;
     border: none;
 }
 
