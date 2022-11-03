@@ -11,6 +11,10 @@ form {
   background-color: #f5c555;
   padding-top: 20px;
   /*pourquoi avoir 2 form dans le css?*/
+  /*le premier c'est pour le breakpoint à 1200px, on doit
+  lui mettre le display flex pour écran de moins de 1200px
+  pour que tout le contenu s'affiche au centre... il est correct
+  je l'ai testé!*/
 }
 
 fieldset {
@@ -18,16 +22,23 @@ fieldset {
   padding: 40px;
   border: none;
   /*on doit ajouter une border rose si on se fit à la maquette*/
+  /*oui je l'avais mis avec mes id carre1, carre2...., je viens de les
+  intégrer à tes id*/
 }
 /*on doit appliquer 1 grid par fieldset, 
 et s'assurer de l'ajuster pour la version mobile*/
+/*pour la version mobile c'est le flex que j'avais fait en haut,
+pas besoin de grid*/
 #g1 {
   display: grid;
   justify-content: stretch;
+  border: 2px solid #d679a6;
 }
 #g2 {
   display: grid;
   justify-content: stretch;
+  border: 2px solid #d679a6;
+  background-color: #d9967b;
 }
 #g3 {
   display: grid;
@@ -36,6 +47,7 @@ et s'assurer de l'ajuster pour la version mobile*/
 #g4 {
   display: grid;
   justify-content: stretch;
+  border: 2px solid #d679a6;
 }
 #g5 {
   display: grid;
@@ -46,9 +58,6 @@ legend {
   text-align: center;
 }
 
-legend {
-  text-align: center;
-}
 
 label {
   color: white;
@@ -62,7 +71,17 @@ input {
   margin-bottom: 40px;
 }
 
-#carre1,
+#g2 > input,
+#g2 > select {
+  background-color: #d9967b;
+}
+
+/* #g2 div > input,
+#g2 div > select {
+  background-color: #d9967b;
+} */
+
+/* #carre1,
 #carre3 {
   border: 2px solid #d679a6;
 }
@@ -75,7 +94,7 @@ input {
 #carre2 div > input,
 #carre2 div > select {
   background-color: #d9967b;
-}
+} */
 
 #province {
   border: 2px solid black;
@@ -120,8 +139,7 @@ input {
   margin-top: 30px;
 }
 
-#reset,
-#submit-form {
+#reset, #submit-form {
   background-color: #f5c555;
   border: 1px solid black;
 }
