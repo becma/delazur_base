@@ -1,0 +1,232 @@
+
+body{
+    position: absolute;
+}
+
+body, main{
+    background-color: #000;
+    background-attachment: initial;
+}
+
+main{
+    margin: 0;
+    position: relative;
+}
+
+h2{
+    font-size: 5rem;
+    color: #d679a6;
+    letter-spacing: 0.5rem;
+    grid-area: 1 / 1 / 2 / 8;
+    text-align: center;
+}
+
+/*--------------DATE CARDS-------------------*/
+
+.dateCard{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(245, 197, 85, 0.3);
+    border: 1px solid #d679a6;
+    padding: 1rem 2rem;
+}
+
+h3{
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+time{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.buttonVenue{
+    background-color: #d679a6;
+    border: 1px solid #f5c555;
+    padding: 1.5rem;
+    min-width: fit-content;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.buttonVenue:hover, .buttonVenue:focus, a:focus{
+    background-color: #fff;
+    outline: none;
+}
+
+a{
+    color: #000;
+    height: fit-content;
+    text-decoration: none;
+}
+
+/*-------------MODALE------------------*/
+
+.buttonModal{
+    background-color: #f5c555;
+    color: #fff;
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+    height: fit-content;
+    padding: 3rem;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.buttonModal:hover, .buttonModal:focus, .buttonSubmit:hover, .buttonClose:hover{
+    background-color: #d679a6;
+    outline: none;
+}
+
+.x-button{
+    float: right;
+    background-color: #f5c555;
+    border: none;
+    margin: 1rem; 
+}
+
+.x-button:hover{
+    color: #d679a6;
+    text-decoration: underline #d679a6 solid 1px;
+}
+
+.modal-fond{
+    display: none;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100vw;
+    height: 100vh;
+}
+
+.modal-form{
+    display: none;
+}
+
+.modal-confirm{
+    display: none;
+    
+}
+
+.modal-form, .modal-confirm{
+    background-color: #f5c555;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h4, p{
+    text-align: center;
+}
+
+h4{
+    font-size: 2rem;
+    min-width: fit-content;
+    padding: 3rem 2rem 0rem 2rem;
+    white-space: nowrap;
+}
+
+p{
+    padding: 0rem 2rem 2rem 2rem; 
+}
+
+input{
+    color: #000;
+    background-color: #f5c555;
+    border: none;
+    border-bottom: solid 1px #000;
+    padding: 1rem 1rem 1.5rem 1rem;
+    width: 75%;
+}
+
+input::placeholder{
+    color: #000;
+    font: 1.3rem 'Montserrat', sans-serif;  
+}
+
+.buttonSubmit, .buttonClose{
+    border: none;
+    padding: 2rem;
+    margin: 2rem;
+}
+
+.buttonClose{
+    display: block;
+    margin: 2rem auto;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*-----------DESKTOP---------------------*/
+
+@media screen and (min-width: 1200px){
+
+    /*---------GRID DU CHAOS--------------*/
+
+    article{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 2rem;
+    }
+    
+    #imperial{
+        grid-area: 2 / 3 / 3 / 6;
+    }
+    
+    #anti{
+        grid-area: 3 / 2 / 4 / 5;
+    }
+    
+    #martiniere{
+        grid-area: 4 / 4 / 5 / 7;
+    }
+    
+    #clubsoda{
+        grid-area: 5 / 1 / 6 / 4;
+    }
+    
+    #cafecampus{
+        grid-area: 6 / 2 / 7 / 5;
+    }
+    
+    #juliette{
+        grid-area: 7 / 3 / 8 / 6;
+    }
+    
+    #beloeil{
+        grid-area: 8 / 4 / 9 / 7;
+    }
+    
+    #carre150{
+        grid-area: 9 / 2 / 10 / 5;
+    }
+    
+    #cogeco{
+        grid-area: 9 / 5 / 10 / 8;
+    }
+    
+    #odyssee{
+        grid-area: 10 / 3 / 11 / 6;
+    }
+    
+    #madrid{
+        grid-area: 11 / 4 / 12 / 7;
+    }
+    
+    #zenith{
+        grid-area: 12 / 3 / 13 / 6;
+    }
+    
+    .buttonModal{
+        grid-area: 13 / 1 / 14 / 8;
+    }
+    
+}
