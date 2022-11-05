@@ -163,6 +163,19 @@ form{
     align-items: center;
 }
 
+/*----------PHONE-----------------*/
+
+@media screen and (max-width: 1999px){
+
+}
+
+article{
+    margin: 2rem;
+}
+
+.dateCard{
+    margin: 3rem;
+}
 
 /*-----------DESKTOP---------------------*/
 
