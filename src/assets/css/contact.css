@@ -10,54 +10,60 @@
 form {
   background-color: #f5c555;
   padding-top: 20px;
-  /*pourquoi avoir 2 form dans le css?*/
-  /*le premier c'est pour le breakpoint à 1200px, on doit
-  lui mettre le display flex pour écran de moins de 1200px
-  pour que tout le contenu s'affiche au centre... il est correct
-  je l'ai testé!*/
 }
 
 fieldset {
   margin: 30px;
   padding: 40px;
   border: none;
-  /*on doit ajouter une border rose si on se fit à la maquette*/
-  /*oui je l'avais mis avec mes id carre1, carre2...., je viens de les
-  intégrer à tes id*/
 }
-/*on doit appliquer 1 grid par fieldset, 
-et s'assurer de l'ajuster pour la version mobile*/
-/*pour la version mobile c'est le flex que j'avais fait en haut,
-pas besoin de grid*/
+/* besoin d'aide pour les grid... qu'est-ce qui manque pour qu'elles affichent comme il faut?*/
 #g1 {
   display: grid;
-  justify-content: stretch;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    "prenom prenom nom nom"
+    "courriel courriel courriel courriel"
+    "naissance naissance age age"
+    "tel tel tel tel";
   border: 2px solid #d679a6;
 }
+
 #g2 {
   display: grid;
-  justify-content: stretch;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "civique rue province pays postal";
   border: 2px solid #d679a6;
   background-color: #d9967b;
 }
 #g3 {
   display: grid;
-  justify-content: stretch;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "couleur images mois semaine"
+    "siteweb siteweb note note"
+    "dateheure dateheure choix choix";
 }
 #g4 {
   display: grid;
-  justify-content: stretch;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "alain jacques dove drhomme";
   border: 2px solid #d679a6;
 }
 #g5 {
   display: grid;
-  justify-content: stretch;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "motpasse";
 }
 
 legend {
   text-align: center;
 }
-
 
 label {
   color: white;
@@ -139,7 +145,8 @@ input {
   margin-top: 30px;
 }
 
-#reset, #submit-form {
+#reset,
+#submit-form {
   background-color: #f5c555;
   border: 1px solid black;
 }
