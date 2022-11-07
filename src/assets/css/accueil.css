@@ -45,6 +45,41 @@ main > section > article > h2 {
     padding: 30px 0 30px 0;
 }
 
+th,
+td, tr {
+    border-bottom: white;
+    text-align: left;
+align-items: center;
+padding: 5px;
+width:fit-content;
+vertical-align: top;
+}
+
+h1{
+    color: yellow;
+    padding-bottom: 5px;
+    font-weight:500;
+}
+.fond_carte {
+    width: 240px;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    display: block;
+}
+
+
+
+.flex-container{
+flex-direction: column;
+display: relative;
+}
+
+.carte {
+position: absolute;
+
+}
+
 @media screen and (min-width: 1224px) {
 
     .pc_element_contenu {
@@ -148,3 +183,4 @@ main > section > article > h2 {
         padding: 0 34px 0 34px;
     }
 }
+
