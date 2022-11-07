@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DELAZUR</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Damion&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/src/assets/css/app.css">
+    </head>
+<style>
+.spotify{
+    background-color: #c39e4f;
+    padding: 40px;
+    height: 300px;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+}
+.album{
+    height: 300px;
+    position: absolute;
+    z-index: 10;
+}
+.album2{
+    height: 300px;
+    z-index: 9;
+    position: absolute;
+    left: 82px;
+    opacity: 90%;
+}
+.album3{
+    height: 300px;
+    z-index: 8;
+    position: absolute;
+    left: 125px;
+    opacity: 80%;
+}
+.album4{
+    height: 300px;
+    z-index: 7;
+    position: absolute;
+    left: 175px;
+    opacity: 70%;
+}
+.album5{
+    height: 300px;
+    z-index: 6;
+    position: absolute;
+    left: 225px;
+    opacity: 60%;
+}
+.album6{
+    height: 300px;
+    z-index: 5;
+    position: absolute;
+    left: 275px;
+    opacity: 50%;
+}
+.album7{
+    height: 300px;
+    z-index: 4;
+    position: absolute;
+    left: 325px;
+    opacity: 40%;
+}
+.album8{
+    height: 300px;
+    z-index: 3;
+    position: absolute;
+    left: 375px;
+    opacity: 30%;
+}
+.album9{
+    height: 300px;
+    z-index: 2;
+    position: absolute;
+    left: 425px;
+    opacity: 20%;
+}
+.album10{
+    height: 300px;
+    z-index: 1;
+    position: absolute;
+    left: 475px;
+    opacity: 10%;
+}
+.logospotify{
+    height: 50px;
+}
+.textspotify{
+    float: right;
+    font-size: larger;
+    margin: 20px;
+}
+.azure{
+    font-size: 4rem;
+    font-weight: bolder;
+    line-height: 0%;
+    margin-bottom: 100px;
+}
+.dispo{
+    font-size: 80%;
+    font-weight: bolder;
+}
+.ecouter{
+    font-size: 70%;
+}
+.fleche{
+    font-size: 3.2rem;
+    margin-left: 80px;
+    margin-top: 10px;
+}
+.ensemble{
+    display: flex;
+}
+.fas.fa-long-arrow-alt-right{
+    margin-right: 70px;
+}
+@media (max-width: 800px){
+    .album1, .album2, .album3, .album4, .album5, .album6, .album7, .album8, .album9, .album10{
+        visibility: hidden;
+    }
+    .album{
+        z-index: 1;
+        position: absolute;
+        left: 400px;
+    }
+    .textspotify{
+        z-index: 2;
+        float: none;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .spotify{
+        display: flex;
+    }
+    
+}
+    </style>
+<body>
+    <div class="spotify">
+        <img class="album" src="./img/album1.png" alt="album">
+        <img class="album2" src="./img/album1.png" alt="album">
+        <img class="album3" src="./img/album1.png" alt="album">
+        <img class="album4" src="./img/album1.png" alt="album">
+        <img class="album5" src="./img/album1.png" alt="album">
+        <img class="album6" src="./img/album1.png" alt="album">
+        <img class="album7" src="./img/album1.png" alt="album">
+        <img class="album8" src="./img/album1.png" alt="album">
+        <img class="album9" src="./img/album1.png" alt="album">
+        <img class="album10" src="./img/album1.png" alt="album">
+        <div class="textspotify">
+            <p class="azure">AZUR MIMOSA</p>
+            <div class="ensemble">
+                <div>
+                    <p class="dispo">Disponible sur Spotify</p>
+                    <p class="ecouter">Écouter le nouvel album sur Spotify</p>
+                </div>
+                <div class="fleche">
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                    <i class="fab fa-spotify"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
