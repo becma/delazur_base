@@ -1,15 +1,6 @@
-@media screen and (max-width: 1200px) {
-  form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
 form {
   background-color: #f5c555;
-  padding-top: 20px;
+  padding: 20px;
 }
 
 fieldset {
@@ -17,48 +8,194 @@ fieldset {
   padding: 40px;
   border: none;
 }
-/* besoin d'aide pour les grid... qu'est-ce qui manque pour qu'elles affichent comme il faut?*/
+
 #g1 {
+  border: 2px solid #d679a6;
+}
+#g1 div {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(8, min-content);
   grid-template-areas:
     "prenom prenom nom nom"
+    "traitpren traitpren traitnom traitnom"
     "courriel courriel courriel courriel"
+    "traitcourriel traitcourriel traitcourriel traitcourriel"
     "naissance naissance age age"
-    "tel tel tel tel";
-  border: 2px solid #d679a6;
+    "traitnais traitnais traitage traitage"
+    "tel tel tel tel"
+    "traittel traittel traittel traittel";
+}
+#prenom-label {
+  grid-area: prenom;
+}
+#prenom {
+  grid-area: traitpren;
+  margin-right: 100px;
+}
+#nom-label {
+  grid-area: nom;
+}
+#nom {
+  grid-area: traitnom;
+}
+#courriel-label {
+  grid-area: courriel;
+}
+#courriel {
+  grid-area: traitcourriel;
+}
+#nais-label {
+  grid-area: naissance;
+}
+#naissance {
+  grid-area: traitnais;
+  margin-right: 100px;
+}
+#age-label {
+  grid-area: age;
+}
+#age {
+  grid-area: traitage;
+}
+#tel-label {
+  grid-area: tel;
+}
+#tel {
+  grid-area: traittel;
 }
 
 #g2 {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 1fr;
-  grid-template-areas: "civique rue province pays postal";
   border: 2px solid #d679a6;
   background-color: #d9967b;
 }
-#g3 {
+#g2 input {
+  background-color: #d9967b;
+}
+#g2 div {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 2, 1fr;
+  grid-template-areas:
+    "civique rue province pays postal"
+    "traitcivique traitrue traitprovince traitpays traitpostal";
+}
+#civique-label {
+  grid-area: civique;
+}
+#civique {
+  grid-area: traitcivique;
+  margin-right: 20px;
+}
+#rue-label {
+  grid-area: rue;
+}
+#rue {
+  grid-area: traitrue;
+  margin-right: 20px;
+}
+#province-label {
+  grid-area: province;
+}
+#province {
+  grid-area: traitprovince;
+  margin-right: 20px;
+  border: 2px solid black;
+  height: 40px;
+}
+#pays-label {
+  grid-area: pays;
+}
+#pays {
+  grid-area: traitpays;
+  margin-right: 20px;
+}
+#postal-label {
+  grid-area: postal;
+}
+#postal {
+  grid-area: traitpostal;
+}
+
+#g3 div {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
   grid-template-areas:
     "couleur images mois semaine"
+    "traitcouleur traitimages traitmois traitsemaine"
     "siteweb siteweb note note"
-    "dateheure dateheure choix choix";
+    "traitsiteweb traitsiteweb traitnote traitnote"
+    "dateheure dateheure choix choix"
+    "traitdateheure traitdateheure traitchoix traitchoix";
 }
+#couleur-label {
+  grid-area: couleur;
+}
+#couleur {
+  grid-area: traitcouleur;
+  margin-right: 50px;
+}
+#images-label {
+  grid-area: images;
+}
+#images {
+  grid-area: traitimages;
+  margin-right: 50px;
+}
+#mois-label {
+  grid-area: mois;
+}
+#mois {
+  grid-area: traitmois;
+  margin-right: 50px;
+}
+#semaine-label {
+  grid-area: semaine;
+}
+#semaine {
+  grid-area: traitsemaine;
+}
+#web-label {
+  grid-area: siteweb;
+}
+#siteweb {
+  grid-area: traitsiteweb;
+  margin-right: 100px;
+}
+#note-label {
+  grid-area: note;
+}
+/*ajuster la largeur du range*/
+#note {
+  grid-area: traitnote;
+}
+#dateheure-label {
+  grid-area: dateheure;
+}
+#dateheure {
+  grid-area: traitdateheure;
+  margin-right: 100px;
+}
+#choix-label {
+  grid-area: choix;
+}
+/*enligner les checkbox sur une seule ligne*/
+#choix {
+  grid-area: traitchoix;
+}
+
 #g4 {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr;
-  grid-template-areas: "alain jacques dove drhomme";
   border: 2px solid #d679a6;
 }
-#g5 {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "motpasse";
+#flex {
+  display: flex;
+  justify-content: space-around;
+}
+#g5 div {
+  /*enligner le email...*/
+  text-align: left;
+  margin-left: 20px;
 }
 
 legend {
@@ -75,36 +212,6 @@ input {
   border-bottom: 1px solid black;
   padding: 20px 0px 10px 0px;
   margin-bottom: 40px;
-}
-
-#g2 > input,
-#g2 > select {
-  background-color: #d9967b;
-}
-
-/* #g2 div > input,
-#g2 div > select {
-  background-color: #d9967b;
-} */
-
-/* #carre1,
-#carre3 {
-  border: 2px solid #d679a6;
-}
-
-#carre2 {
-  border: 2px solid #d679a6;
-  background-color: #d9967b;
-}
-
-#carre2 div > input,
-#carre2 div > select {
-  background-color: #d9967b;
-} */
-
-#province {
-  border: 2px solid black;
-  height: 40px;
 }
 
 #couleur {
@@ -151,4 +258,11 @@ input {
   border: 1px solid black;
 }
 
-/*je m'occupe du CSS pour le range!*/
+@media screen and (max-width: 1200px) {
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
