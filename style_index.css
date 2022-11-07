@@ -1,0 +1,397 @@
+* {
+    transition: all 0.5s ease-in-out;
+}
+
+html {
+    font-size: 50%;
+}
+
+body {
+    background-color: black;
+    background-image: url("/src/assets/img/header.jpg");
+    background-size: auto 100vw;
+    background-attachment: scroll;
+    background-position: top center;
+    background-repeat: no-repeat;
+    color: white;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(5, 1fr);
+    font: 1.5rem 'Montserrat', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+main {
+    grid-column: 1 / 6;
+}
+
+h2{
+    font-family: Damion;
+    color: #d679a6;
+    margin-bottom: 50px;
+    margin-top: 100px;
+    font-weight: 200;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    grid-row-start: 3;
+    grid-column: span 16;
+    font-size: 0.8em;
+    text-align: center;
+    width: 100%;
+    padding: 0 50px;
+}
+
+footer a {
+    color: #d679a6;
+    text-decoration: none;
+}
+
+footer a:hover, footer a:focus {
+    color: white;
+    outline: none;
+}
+
+footer img {
+    width: 150px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+footer div:nth-child(3) ul {
+    display: flex;
+    justify-content: space-between;
+    font-size: 3rem;
+}
+
+footer div:nth-child(3) ul li {
+    padding: 0 15px;
+}
+
+footer div:last-child {
+    text-align: right;
+}
+
+header {
+    grid-column: 1 / 6;
+    grid-row-end: 1;
+}
+
+header > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header > div > img {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+}
+
+header > nav {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+header > nav > ul {
+    justify-content: space-evenly;
+    list-style-type: none;
+    font-size: 4rem;
+    margin-top: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+header li {
+    flex-grow: 1;
+    text-align: center;
+}
+
+header li a {
+    border-bottom: 1px solid #f5c555;
+    color: #f5c555;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+}
+
+header li a:hover, header li a:focus {
+    border-color: #d679a6;
+    outline: none;
+}
+
+header li a.active {
+    border-color: transparent;
+    color: #d679a6;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+.visuallyhidden {
+    position: absolute !important;
+    left: -200vw !important;
+    opacity: 0 !important;
+}
+
+.serif {
+    font-family: 'Damion', serif !important;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#sofa{
+    position: absolute;
+    z-index: 1;
+}
+
+#logo{
+    z-index: 2;
+}
+
+table{
+    position:absolute;
+    width: 320px;
+    height: 500px;
+    border-collapse: collapse;
+    visibility: hidden;
+}
+
+.photo_membre{
+    width: 350px;
+}
+
+.section_membre{
+    display: flex;
+    justify-content: center;
+    margin-top: 55px;
+}
+
+th{
+    text-align: left;
+}
+
+.table_spacer{
+    height: 40px;
+}
+
+td {
+    width: 50%;
+    border-bottom: 1px solid white;
+}
+
+.sub_th{
+    border-bottom: 1px solid white;
+}
+
+.th_nom{
+    font-size: 30px;
+    border-bottom: none;
+    color:#f5c555;
+    font-weight: normal;
+    visibility: visible;
+}
+
+.photo_membre:hover + table{
+    visibility: visible;
+}
+
+.photo_membre:hover{
+    filter:opacity(20%);
+}
+
+#membres{
+    display: flex;
+    flex-direction: column;
+}
+
+.spotify{
+    background-color: #c39e4f;
+    padding: 40px;
+    height: 300px;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+.album{
+    height: 300px;
+    position: absolute;
+    z-index: 10;
+}
+.album2{
+    height: 300px;
+    z-index: 9;
+    position: absolute;
+    left: 82px;
+    opacity: 90%;
+}
+.album3{
+    height: 300px;
+    z-index: 8;
+    position: absolute;
+    left: 125px;
+    opacity: 80%;
+}
+.album4{
+    height: 300px;
+    z-index: 7;
+    position: absolute;
+    left: 175px;
+    opacity: 70%;
+}
+.album5{
+    height: 300px;
+    z-index: 6;
+    position: absolute;
+    left: 225px;
+    opacity: 60%;
+}
+.album6{
+    height: 300px;
+    z-index: 5;
+    position: absolute;
+    left: 275px;
+    opacity: 50%;
+}
+.album7{
+    height: 300px;
+    z-index: 4;
+    position: absolute;
+    left: 325px;
+    opacity: 40%;
+}
+.album8{
+    height: 300px;
+    z-index: 3;
+    position: absolute;
+    left: 375px;
+    opacity: 30%;
+}
+.album9{
+    height: 300px;
+    z-index: 2;
+    position: absolute;
+    left: 425px;
+    opacity: 20%;
+}
+.album10{
+    height: 300px;
+    z-index: 1;
+    position: absolute;
+    left: 475px;
+    opacity: 10%;
+}
+.logospotify{
+    height: 50px;
+}
+.textspotify{
+    float: right;
+    font-size: larger;
+    margin: 20px;
+}
+.azure{
+    font-size: 4rem;
+    font-weight: bolder;
+    line-height: 0%;
+    margin-bottom: 100px;
+}
+.dispo{
+    font-size: 80%;
+    font-weight: bolder;
+}
+.ecouter{
+    font-size: 70%;
+}
+.fleche{
+    font-size: 3.2rem;
+    margin-left: 80px;
+    margin-top: 10px;
+}
+.ensemble{
+    display: flex;
+}
+.fas.fa-long-arrow-alt-right{
+    margin-right: 70px;
+}
+
+@media screen and (min-width: 800px) {
+    header {
+        grid-column: 2 / 16;
+    }
+
+    header > nav > ul {
+        display: flex;
+    }
+
+    #membres{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    body {
+        grid-template-columns: repeat(16, 1fr);
+        grid-row-gap: 50px;
+    }
+
+    main {
+        grid-column: 2 / 16;
+    }
+
+}
+
+@media screen and (min-width: 1224px) {
+    header > div {
+        height: 100vh;
+    }
+
+    header > nav {
+        background-color: transparent;
+    }
+
+    html {
+        font-size: 62.5%;
+    }
+
+    body {
+        background-attachment: fixed;
+        background-size: auto 100vh;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+}
+
+@media (max-width: 800px){
+    .album1, .album2, .album3, .album4, .album5, .album6, .album7, .album8, .album9, .album10{
+        visibility: hidden;
+    }
+    .album{
+        z-index: 1;
+        position: absolute;
+        left: 400px;
+    }
+    .textspotify{
+        z-index: 2;
+        float: none;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .spotify{
+        display: flex;
+    }
+    
+}
+
