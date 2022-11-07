@@ -68,12 +68,12 @@ h1 {
 }
 
 .flex-container {
-flex-direction: column;
-display: relative;
+    flex-direction: column;
+    display: relative;
 }
 
 .carte {
-position: absolute;
+    position: absolute;
 }
 
 @media screen and (min-width: 1224px) {
