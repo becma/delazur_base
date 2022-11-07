@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DELAZUR</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Damion&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="contact.css">
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <header>
+            <div>
+                <img src="./img/delazur_logo.png" alt="Logo de Delazur" id="logo">
+                <img src="./img/header.jpg" alt="boys_sofa" id="sofa">
+                <h1 class="visuallyhidden">Delazur</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a class="serif" href="/src/index.html">Accueil</a></li>
+                    <li><a class="serif" href="/src/spectacles.html">Spectacles</a></li>
+                    <li><a class="serif" href="/src/boutique.html">Boutique</a></li>
+                    <li><a class="serif" href="/src/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <form action="resultat.html" autocomplete name="delazure" method="GET" id="nameform">
+                <!--information générales-->
+                <fieldset class="field1">
+                    <legend>Information générales</legend>
+                    <div id="divChild01">
+                        <div>
+                <!--Prénom-->
+                            <label for="username">Prénom</label>
+                            <input type="text" id="prenom" name="name" required
+                        minlength="2" maxlength="20" size="10">
+                        </div>
+                        <div>
+                <!--Nom-->  
+                            <label for="name">Nom de Famille</label>
+                            <input type="text" id="nomdefamille" name="name" requiredminlength="2" maxlength="20" size="10">
+                        </div>
+                    </div>
+                    <div id="divChild02">
+                <!--Addresse courriel--> 
+                <div>
+                    <label for="email">Adresse courriel</label>
+                    <input type="email" id="myEmail" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+
+                </div>
+                    </div>
+                    <div id="divChild03">
+                        <div>
+                <!--Date de naissance--> 
+                            <label for="date">Date de Naissance</label>
+                            <input type="date" name="anniversaire"  value="yyyy-mm-dd" required>
+                        </div>
+                        <div>
+                <!--Ton Age-->
+                            <label for="age">Et ton âge</label>
+                            <input type="number" id="age" name="age" min="01" max="99" >
+                        </div>
+                    </div>
+                    <div id="divChild04">
+                <!--Numéro de téléphone-->  
+                        <label for="phone">Numéro de téléphone</label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                    </div>
+                </fieldset>
+                <!--adresse-->
+                <fieldset class="field2">
+                    <legend>Adresse</legend>
+                <!--Numéro civique-->
+                    <div>
+                        <label for="address">Numéro Civique</label>
+                        <input type="text" id="address">
+                    </div>
+                <!--Rue-->
+                    <div>
+                        <label for="address">Rue</label>
+                        <input type="text" id="address">
+                    </div>
+                <!--Province-->
+                    <div>
+                        <label for="province">Province</label>
+                        <select name="province" id="province" required>
+                            <option value="AB">Alberta</option>
+                            <option value="BC">British Columbia</option>
+                            <option value="MB">Manitoba</option>
+                            <option value="NB">New Brunswick</option>
+                            <option value="NL">Newfoundland and Labrador</option>
+                            <option value="NS">Nova Scotia</option>
+                            <option value="NT">Northwest Territories</option>
+                            <option value="NU">Nunavut</option>
+                            <option value="ON">Ontario</option>
+                            <option value="PE">Prince Edward Island</option>
+                            <option value="QC">Quebec</option>
+                            <option value="SK">Saskatchewan</option>
+                            <option value="YT">Yukon</option>
+                        </select>
+                    </div>
+                <!--Pays-->
+                    <div>
+                        <label for="country">Pays</label>
+                        <input type="country" id="country" name="country"></input>  
+                    </div>
+                <!--Code Postal-->
+                    <div>
+                        <label for="zip">Code Postal</label>
+                        <input id="zip" name="zip" type="text" pattern="^(^[0-9]{5}|^[a-zA-Z]{1}[0-9]{1}[a-zA-Z]{1}[0-9]{1}[a-zA-Z]{1}[0-9]{1}|[0-9]{5}[-][0-9]{4}|[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9])$*">
+                    </div>   
+                </fieldset>
+                <!--autres-->
+                <fieldset class="field3">
+                    <div id="boite1">   
+                        <div class="parentgroup1">
+                <!--couleur pref-->
+                            <div class="childgroup1">
+                                <label for="body">Votre couleur préférée?</label>
+                                <input type="color" id="colorsquare" name="body" value="#000000">
+                            </div>
+                <!--image pref-->
+                            <div class="childgroup1">
+                                <label for="filefield">Vos Images préférées?</label>
+                                <input type="file" name="filefield" multiple="multiple" accept="image/png, image/jpeg">
+                            </div>
+                        </div>
+                        <div class="parentgroup2">
+                <!--mois pref-->
+                            <div class="childgroup2">
+                                <label for="fave-month">Votre mois préféré? De quelle année?</label>
+                                <input id="fave-month" type="month" name="fave-month" value="yyyy-dd">
+                            </div>
+                <!--semaine pref-->
+                            <div class="childgroup2">
+                                <label for="week">Votre semaine préférée de tous les temps?</label>
+                                <input type="week" name="week" id="camp-week" value="yyyy-W01">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="boite2">
+                        <div class="parentgroup3">
+                <!--site recommandation-->
+                            <div class="childgroup3">
+                                <label class="labelspace" for="url">Un site que nous devons découvrir?</label>
+                                <input type="url" name="url" id="url" pattern="https://.*">
+                            </div>
+                <!--slider without label-->
+                            <div class="childgroup3">
+                                <label for="volume">Quelle note lui-donnez-vous?</label>
+                                <div id="range">
+                                    <input type="range" id="volume" name="volume" min="0" max="50"> 
+                                </div>  
+                            </div> 
+                        </div>       
+                    </div>                           
+                    <div id="boite3">
+                        <div class="parentgroup4">     
+                <!--date choice-->
+                            <div class="childgroup4">
+                                <label for="start">La date et l'heure du show que tu veux venir voir?</label>
+                                <input type="datetime-local" id="start" name="show-start" value="yyyy-mm-dd, --:-- --">
+                            </div>      
+                <!--type='checkbox'-->  
+                            <div class="parentgroup5">                                   
+                                <div id="boite4">
+                                    <p>Durant ce show, tu veux...</p>
+                                    <div id="shitbox">
+                                        <div class="childgroup5">
+                                            <label for="danser">Danser</label>
+                                            <input type="checkbox" id="danser" name="danser">
+                                        </div>
+                                        <div class="childgroup5">
+                                            <label for="groover">Groover</label>        
+                                            <input type="checkbox" id="groover" name="groover">
+                                        </div>
+                                        <div class="childgroup5"> 
+                                            <label for="coucher">Me coucher tard</label> 
+                                            <input type="checkbox" id="coucher" name="coucher">  
+                                        </div>
+                                    </div>    
+                                </div>
+                            </div>  
+                        </div>
+                    </div>  
+                </fieldset>          
+                <!--votre membre du groupe-->
+                <fieldset class="field4">
+                    <legend>Votre membre du groupe préféré?</legend>
+                    <div>
+                        <input type="radio" id="alain" name="fav_member" value="Alain">
+                        <label for="alain">Alain Jasmine</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="jacques" name="fav_member" value="Jacques">
+                        <label for="jacques">Jacques Danger</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="dove" name="fav_member" value="Dove">
+                        <label for="dove">Dove</label>
+                    </div>
+                    <div id="dr_h">
+                        <input type="radio" id="dr" name="fav_member" value="Dr">
+                        <label for="dr">Dr Homme</label>
+                    </div>
+                </fieldset>
+                <!--mot de passe Kaput Draconis********-->
+                <fieldset class="field5"> 
+                    <label for="psw">Mot de paaaaaaaaaasse?</label>
+                    <input type="password" id="psw" name="psw" pattern="Kaput Draconis" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                </fieldset>
+                <!--boutton réinitialiser et soumettre-->
+                <div id="buttons_container">
+                    <button class="reset" type="reset" form="nameform" value="Reset">Réinitialiser</button>
+                    <button class="submit" type="submit" form="nameform" value="Submit">Soumettre</button>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <div>
+                <img src="./img/delazur_logo.png" alt="Logo Delazur">
+            </div>
+            <div>
+                <ul>
+                    <li><a href="/src/index.html">Accueil</a></li>
+                    <li><a href="/src/spectacles.html">Spectacles</a></li>
+                    <li><a href="/src/boutique.html">Boutique</a></li>
+                    <li><a href="/src/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="https://www.instagram.com/delazurband/" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://music.apple.com/us/artist/delazur/1502322364" aria-label="Apple Music" target="_blank"><i class="fab fa-apple"></i></a></li>
+                    <li><a href="https://music.youtube.com/channel/UCgWAueQ2PGlzKfPIjrtn05g" aria-label="Youtube Music" target="_blank"><i class="far fa-play-circle"></i></a></li>
+                    <li><a href="https://www.facebook.com/delazurband/" aria-label="Facebook" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://open.spotify.com/artist/1YG9iUkHCKcIEopGLn5QYb" aria-label="Spotify" target="_blank"><i class="fab fa-spotify"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCNU_NVl0zzl5wluB0_9fNoA" aria-label="Youtube" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="https://fontawesome.com/icons/bandcamp?style=brands" aria-label="Bandcamp" target="_blank"><i class="fab fa-bandcamp"></i></a></li>
+                </ul>
+            </div>
+            <div>
+                <p>Prototype Web</p>
+                <p>GR.? - Octobre 2022</p>
+            </div>
+        </footer>
+    </body>
+</html>   
+
