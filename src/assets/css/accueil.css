@@ -56,25 +56,79 @@ th,td, tr {
 
 h1 {
     color: yellow;
-    padding-bottom: 5px;
     font-weight:500;
+    position: absolute;
+    z-index: 2;
+left: 50%;
+top: 50%;
+display: relative;
+
 }
-.fond_carte {
+
+.overlay-image {
+
+    position: relative;
+    display: inline-block;
+    /* Prendra la forme de son contenu */
+  
+  }
+  
+  .overlay-image img {
     width: 240px;
     left: 0px;
     top: 0px;
-    z-index: -1;
-    display: block;
-}
-
-.flex-container {
-    flex-direction: column;
-    display: relative;
-}
-
-.carte {
+    vertical-align: middle;
+    position: relative;
+  }
+  
+  .overlay-image .hover-image {
+    /* Positionnement du contenu hover */
     position: absolute;
-}
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  
+    /* Effets de transition */
+    opacity: 0;
+    /* On cache l'élément via son opacité */
+    transition: opacity 0.25s ease-in-out;
+    /* Effet de transition sur le hover */
+  
+    /* Style du contenu hover */
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 30px;
+  
+    /* Centrer le contenu */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .overlay-image:hover .hover-image {
+    opacity: 1;
+    /* Lors du hover, on remet l'opacité à 1 */
+  }
+  
+  
+  @media screen and (min-width: 767px) {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (min-width: 1224px) {
 
