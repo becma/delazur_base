@@ -1,0 +1,770 @@
+/* Body */
+
+* {
+    transition: all 0.5s ease-in-out;
+}
+
+html {
+    font-size: 50%;
+}
+/* Header */
+header {
+    grid-column: 1 / 6;
+    grid-row-end: 1;
+}
+header > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header > div > img {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+}
+header > nav {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+header > nav > ul {
+    justify-content: space-evenly;
+    list-style-type: none;
+    font-size: 4rem;
+    margin-top: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+header li {
+    flex-grow: 1;
+    text-align: center;
+}
+header li a {
+    border-bottom: 1px solid #f5c555;
+    color: #f5c555;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+}
+header li a:hover, header li a:focus {
+    border-color: #d679a6;
+    outline: none;
+}
+header li a.active {
+    border-color: transparent;
+    color: #d679a6;
+    font-weight: bold;
+    pointer-events: none;
+}
+body {
+    background-color: black;
+    background-image: url("/src/assets/img/header.jpg");
+    background-size: auto 100vw;
+    background-attachment: scroll;
+    background-position: top center;
+    background-repeat: no-repeat;
+    color: white;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(5, 1fr);
+    font: 1.5rem 'Montserrat', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+main {
+    grid-column: 1 / 6;
+}
+/* Footer*/
+footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    grid-row-start: 3;
+    grid-column: span 16;
+    font-size: 0.8em;
+    text-align: center;
+    width: 100%;
+    padding: 0 50px;
+}
+footer a {
+    color: #d679a6;
+    text-decoration: none;
+}
+footer a:hover, footer a:focus {
+    color: white;
+    outline: none;
+}
+footer img {
+    width: 150px;
+}
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+footer div:nth-child(3) ul {
+    display: flex;
+    justify-content: space-between;
+    font-size: 3rem;
+}
+footer div:nth-child(3) ul li {
+    padding: 0 15px;
+}
+footer div:last-child {
+    text-align: right;
+}
+form{
+    background-color: #f5c555;
+    padding: 55px;
+    display: flex;
+    flex-direction: column;
+}
+/* Form style 01*/
+.field1 {
+    border-color: #D47E98;
+    border-style: solid;
+}
+.field1 div {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.field1 input {
+    background-color: #f5c555;
+    border: none;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    width: 85%;
+}
+.field1 input, label{
+    margin-top: 30px;
+
+}
+input[type=number]::-webkit-inner-spin-button {
+    opacity: 1;
+}
+
+/* Form style 02*/
+.field2{
+    display: flex;
+    flex-direction: column;
+    background-color: #D9967A;
+    border-color: #D47E98;
+    border-style: solid;
+    margin-top: 60px;
+    padding-top: 40px;
+    padding-bottom: 45px;
+}
+.field2 div{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding-right: 50px;
+    padding-left: 20px;
+    
+}
+.field2 input{
+    background-color: #D9967A;
+    border: none;
+    border-bottom: 1px solid black;
+    padding-bottom: 15px;
+    padding-left: 15px;
+}
+.field2 label{
+padding-bottom: 10px;
+}
+
+select{
+    background-color: #D9967A;
+    box-sizing: border-box ;
+    border: 1px solid black;
+    width: 85%;
+    padding: 15px;
+}
+
+/* Form style 03*/
+.field3>div{
+    display: flex;
+    flex-direction: column;
+    border-style: none;
+    margin-bottom: 20px;
+    margin-top: 60px;
+}
+
+.childgroup1, .childgroup2, .childgroup3{
+    margin-bottom: 20px;
+}
+
+.childgroup1{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.parentgroup2{
+    width: 90%;
+}
+
+.field3 {
+    border-style: none;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.field3 input{
+    border: none;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    background-color: #f5c555;
+    width: 90%;
+    margin-top: 20px;
+}
+#site{
+    width: 87%;
+}
+.childgroup3>#range{
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid black;
+    padding: 0px;
+    width: 93%;
+}
+
+.childgroup4{
+    width:95%
+}
+
+#volume{
+    border-bottom: none;
+}
+#colorsquare {
+    width: 70px;
+    height: 70px;
+    border-bottom: none;
+    margin: 10px;    
+}
+.field3 label{
+    margin-bottom: 10px;
+}
+
+.labelspace{
+    margin-top: 60px;
+}
+
+/* Form style 04*/
+.field4{
+    border-color: #D47E98;
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    padding-right: 50px;
+    padding-left: 60px;
+} 
+
+/* Fieldchek*/
+#boite1, #boite2, #boite3{
+    width:95%;
+    align-self: center;
+}
+#boite3{
+    border: none;
+    margin-bottom: 20px;
+    margin-top: 60px;
+}
+#boite1, #boite2{
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+#boite3 p{
+}
+
+#boite4{
+    margin-top: 30px;
+}
+
+#boite4 input{
+    width: 5%;
+    height: 15px;
+}
+
+.childgroup5{
+    height: 20px;
+}
+
+/* Form style 05*/
+.field5{
+    border-style: none;
+    border: none;
+    margin-top: 50px;
+}
+.field5 input {
+    background-color: #f5c555;
+    border-style: none;
+    display: flex;
+    flex-direction: column;
+    padding-right: 50px;
+    padding-left: 60px;
+    border-bottom: 1px solid black;
+    margin-top: 20px;
+}
+    
+/* input button*/
+input[type=range] {
+    -webkit-appearance: none;
+
+}
+input[type=range]::-webkit-slider-runnable-track {
+    height: 15px;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px #D779A6;
+    background: #D779A6;
+    border-radius: 10px;
+    border: 6px solid #D779A6;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    border: 2px solid #D779A6;
+    height: 35px;
+    width: 35px;
+    border-radius: 50px;
+    background: #F5C555;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -16.5px;
+}
+
+/* Bouton*/
+#buttons_container{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+
+#buttons_container button{
+    background-color:#F5C555;
+    height: 45px;
+    width: 100px;
+    border: 1px solid black;
+}
+
+#buttons_container button:hover{
+    cursor: pointer;
+}
+legend{
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+/* media querry */
+/* Body + Main */
+@media screen and (min-width: 800px) {
+    body {
+        grid-template-columns: repeat(16, 1fr);
+        grid-row-gap: 50px;
+    }
+    main {
+        grid-column: 2 / 16;
+    }
+}
+
+/* HTML + Body */
+@media screen and (min-width: 1224px) {
+    html {
+        font-size: 62.5%;
+    }
+    body {
+        background-attachment: fixed;
+        background-size: auto 100vh;
+    }
+}
+
+/* Footer*/
+@media screen and (min-width: 1024px) {
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+/* Header */
+@media screen and (min-width: 800px) {
+    header {
+        grid-column: 2 / 16;
+    }
+    header > nav > ul {
+        display: flex;
+    }
+}
+@media screen and (min-width: 1224px) {
+    header > div {
+        height: 100vh;
+    }
+    header > nav {
+        background-color: transparent;
+    }
+}
+
+/* Formstyle 01 - Ajout Rémi*/
+@media screen and (min-width: 800px) {
+    .field1{
+        display: flex;
+        flex-direction: column;
+        padding-right: 20px;
+        padding-left: 50px;
+    }
+    #divChild01{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 50px;
+    } 
+    #divChild01 div{
+        width: 42%
+    }
+    #divChild02{
+        width: 85%;
+    } 
+    #divChild03{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    } 
+    #divChild03 div{
+        width: 42%
+    }
+    #divChild04{
+        width: 85%;
+        padding-bottom: 30px;
+    }
+/* Formstyle 02 - ajout Rémi  */
+    .field2 {
+        flex-direction: row;
+        position:static;
+    }
+    .field2 div{
+        flex-wrap: wrap;
+        padding-top: 20px;
+        padding-bottom: 40px;   
+        justify-content: space-between;  
+    } 
+    .field2 input{
+        padding: 10px;
+    }
+
+/* Formstyle 03 */
+    .field3{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0px;
+        width:95%;
+        align-self: center;
+    }
+    .labelspace{
+        margin-top: 34px;
+    }
+    .field3 div{
+        margin-bottom: 20px;
+        margin-top: 0px;
+    }   
+    #boite1 >.parentgroup1{
+        display: flex;
+        flex-direction: row;
+        width: 45%;
+        justify-content: space-between;
+    }  
+    #boite1>.parentgroup2{
+        display: flex;
+        flex-direction: row;
+        width: 45%;
+        justify-content: space-between;
+    } 
+    #boite2>.parentgroup3{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    }
+    #boite3>.parentgroup4{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    } 
+    #boite3>.parentgroup5{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    } 
+    .childgroup1{
+        display: flex;
+        width: 37%;
+    }
+    .childgroup2{
+        display: flex;
+        flex-direction: column;
+        width: 37%;
+    }
+    .childgroup3{
+        display: flex;
+        flex-direction: column;
+        width: 45%; 
+    }
+
+    #site{
+        width: 45%;
+    }
+
+    .childgroup4{
+        display: flex;
+        flex-direction: column;
+        width: 40%; 
+    }
+    .childgroup4 input{
+        width: 55%;
+    }
+    .childgroup5{
+        display: flex;
+        flex-direction: row;
+        width: 25%;
+    }
+
+    #boite2{
+        margin-top: 0px;
+    }
+    #boite4 >.childgroup5{
+        display: flex;
+        width: 150px;
+        flex-direction:row; 
+    }
+    .childgroup5>input{
+        padding-right: 85px;
+    }
+    .childgroup5>label{
+        font-size: 10px;
+    }
+    #boite3>p{
+    margin-bottom:0px;
+    }
+    #range{
+        align-items: center;
+        display: flex;
+        width: 80%;
+    }
+    #boite1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #boite4{
+        display: flex;
+        flex-direction: column;
+        padding:0px;
+        margin-top: 0px;
+    }
+
+    #boite4 input{
+        width: 30%;
+    }
+
+    #boite3{
+        padding-bottom:0px;
+        margin-top: 0px;
+        margin-bottom:0px;
+        height:140px;
+    }
+
+/* Formstyle 04 */
+.field4{
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px;
+    flex: auto;
+    margin: 10px;
+}
+    #dr_h{
+        padding-right: 220px;
+    }
+
+/* Formstyle 05 */
+    .field5{
+        display: flex;
+        flex-direction: column;
+        padding-left: 100px;
+        padding-right: 400px;
+    } 
+
+/* Buttons */
+    #buttons_container{
+        padding-right: 600px;
+        padding-left: 600px;
+    }
+
+    #shitbox{
+        display: flex;
+        flex-direction: row;
+        padding:0px;
+    }
+    .parentgroup5{
+        width: 46%;
+    }
+}
+/* Classe */
+/* Classe Header */
+.visuallyhidden {
+    position: absolute !important;
+    left: -200vw !important;
+    opacity: 0 !important;
+}
+
+.serif {
+    font-family: 'Damion', serif !important;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#sofa{
+    position: absolute;
+    z-index: 1;
+}
+
+#logo{
+    z-index: 2;
+}
+.spotify{
+    background-color: #c39e4f;
+    padding: 30px;
+    height: 300px;
+}
+/* Non utile
+.album{
+    height: 300px;
+    position: absolute;
+    z-index: 10;
+}
+.album2{
+    height: 300px;
+    z-index: 9;
+    position: absolute;
+    left: -250px;
+    opacity: 90%;
+}
+.album3{
+    height: 300px;
+    z-index: 8;
+    position: absolute;
+    left: -500px;
+    opacity: 80%;
+}
+.album4{
+    height: 300px;
+    z-index: 7;
+    position: absolute;
+    left: -750px;
+    opacity: 70%;
+}
+.album5{
+    height: 300px;
+    z-index: 6;
+    position: absolute;
+    left: -1000px;
+    opacity: 60%;
+}
+.album6{
+    height: 300px;
+    z-index: 5;
+    position: absolute;
+    left: -1250px;
+    opacity: 50%;
+}
+.album7{
+    height: 300px;
+    z-index: 4;
+    position: absolute;
+    left: 350px;
+    opacity: 40%;
+}
+.album8{
+    height: 300px;
+    z-index: 3;
+    position: absolute;
+    left: 400px;
+    opacity: 30%;
+}
+.album9{
+    height: 300px;
+    z-index: 2;
+    position: absolute;
+    left: 450px;
+    opacity: 20%;
+}
+.album10{
+    height: 300px;
+    z-index: 1;
+    position: absolute;
+    left: 500px;
+    opacity: 10%;
+}
+
+.logospotify{
+    height: 50px;
+}
+.textspotify{
+    float: right;
+    clear: both;
+}
+*/
+/* Table
+table{
+    position:absolute;
+    width: 320px;
+    height: 500px;
+    border-collapse: collapse;
+} 
+
+th, td{
+    border-bottom: 1px solid white;
+}
+
+td{
+    visibility: hidden;
+}
+
+.photo_membre{
+    width: 350px;
+    z-index: -1;
+}
+
+.section_membre{
+    display: flex;
+    justify-content: center;
+    margin-top: 55px;
+}
+
+#membre{
+    display: flex;
+    flex-direction: column;
+}
+
+.th_nom{
+    font-size: 2rem;
+    border-bottom: none;
+}
+
+th{
+    text-align: left;
+}
+
+.table_spacer{
+    height: 40px;
+}
+
+td {
+    width: 50%;
+}
+*/
