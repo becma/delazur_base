@@ -45,55 +45,45 @@ main > section > article > h2 {
     padding: 30px 0 30px 0;
 }
 
-th,td, tr {
-    border-bottom: 1.5px white;
-    text-align: left;
-    align-items: center;
+/*fiches des artistes*/
+
+th,tr {
+    text-align:justify;
     padding: 5px;
-    width:fit-content;
+    width:auto;
     vertical-align: top;
+    border-bottom: 1.5px white;
 }
 
+table{
+    position: absolute;
+width: 250px;
+height: 425px;
+
+}
 .titrenom {
     color: yellow;
-    font-weight:500;
-    position: absolute;
-    z-index: 2;
-left: 50%;
-top: 50%;
-display: relative;
+visibility: visible;
+font-size: medium;
 
 }
+.musiciens{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
 
-.overlay-image {
 
-    position: relative;
-    display: inline-block;
-    grid-column-start: 2;
-    grid-column-end: 12;
-    /* Prendra la forme de son contenu */
-  
-  }
-
-  .overlay-image {
-    grid-column-start: 2;
-    grid-column-end: 12;
-  }
-  .overlay-image img {
+  .photo-musicien {
     width: 300px;
-    left: 0px;
-    top: 0px;
     vertical-align: middle;
     position: relative;
     display: flex;
-    justify-content: space-between;
-    padding: ;
-
-
+    justify-content: center;
   }
   
   .overlay-image .hover-image {
-    /* Positionnement du contenu hover */
     position: absolute;
     top: 0;
     bottom: 0;
@@ -119,18 +109,11 @@ display: relative;
     text-align: center;
   }
   
-  .overlay-image:hover .hover-image {
-    opacity: 1;
-    /* Lors du hover, on remet l'opacité à 1 */
+  .photo-musicien:hover {
+    opacity: 50%;
   }
   
   
-  @media screen and (min-width: 767px) {}
-
-
-
-
-
 
 
 
