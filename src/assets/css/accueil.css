@@ -47,18 +47,23 @@ main > section > article > h2 {
 
 /*fiches des artistes*/
 
-th,tr {
-    text-align:justify;
+th {
+    text-align:left;
     padding: 5px;
     width:auto;
     vertical-align: top;
-    border-bottom: 1.5px white;
+
 }
 
+td{
+    width: 50%;
+    border-bottom: 1.5px white;
+}
 table{
     position: absolute;
 width: 250px;
 height: 425px;
+visibility: hidden;
 
 }
 .titrenom {
