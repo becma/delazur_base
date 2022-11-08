@@ -1,0 +1,181 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DELAZUR</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Damion&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/assets/css/app.css">
+</head>
+
+<style>
+
+    
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1; 
+        padding-top: 200px; 
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%; 
+        overflow: auto; 
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+    .modal-content {
+        background-color: #f5bc53;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        margin: auto;
+        padding: 55px;
+        width: 500px;
+        height: 300px;
+        
+    }
+    #modalContent2 {
+        display: none;
+    }
+    .close, .close2 {
+        color: black;
+        float: right;
+        font-size: 32px;
+        z-index: 2;
+    }
+    .close:hover,
+    .close:focus {
+        color: #d16f9a;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .close2:hover,
+    .close2:focus {
+        color: #d16f9a;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .abonner{
+        font-size: 1.8rem;
+        font-weight: bolder;
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    input[type=email] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        border: none;
+        border-bottom: 1px solid #000000;
+        background-color: #f5bc53;
+        color: white;
+    }
+    #soumettre{
+        margin: auto;
+        text-align: center;
+        width: 100px;
+        height: 50px;
+        background-color: white;
+        border: none;
+        margin: 40px;
+        
+    }
+    #soumettre:hover{
+        background-color: #d16f9a;
+    }
+    ::placeholder {
+        color: black;
+        font-size: larger;
+        opacity: 1; 
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #ferme{
+        margin: auto;
+        text-align: center;
+        width: 100px;
+        height: 50px;
+        background-color: white;
+        border: none;
+        margin: 40px;
+    }
+    #ferme:hover{
+        background-color: #d16f9a;
+    }
+    .boutton2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    </style>
+    <body>
+    <button id="myBtn">Open Modal</button>
+    <div id="myModal" class="modal">
+        <div id="modalContent" class="modal-content">
+            <span class="close">&times;</span>
+            <p class="abonner">S'ABONNER À LA NEWSLETTER</p>
+            <P>Soyez aux courant de nos prochains spectacles!</P>
+            <form novalidate>
+                <label for="email"></label>
+                <input type="email" id="email" name="email" placeholder="Entez votre courriel ici">
+                <button id="soumettre" type="submit" >SOUMETTRE</button>
+            </form>
+        </div>
+        <div id="modalContent2" class="modal-content"><span class="close2">&times;</span>
+            <p class="abonner">S'ABONNER À LA NEWSLETTER</p>
+            <P>Merci beaucoup pour votre inscription!!</P>
+            <div class="boutton2">
+                <button id="ferme" type="submit" >Fermer</button></div></div>
+    </div>
+    
+    <script>
+
+    var modal = document.getElementById("myModal");
+    var modalContent = document.getElementById("modalContent")
+    var modalContent2 = document.getElementById("modalContent2")
+    var btn = document.getElementById("myBtn");
+    var soumettre = document.getElementById("soumettre");
+    var span = document.getElementsByClassName("close")[0];
+    var span2 = document.getElementsByClassName("close2")[0];
+    let form = document.querySelector ("form");
+    let emailInput = document.querySelector('input[type=email]');
+    var ferme = document.getElementById ("ferme");
+
+    form.addEventListener('submit', validateForm);
+
+    function validateForm() {
+        event.preventDefault();
+        let emailValue = emailInput.value;
+        let indexArobas = emailValue.indexOf('@');
+        let indexDot = emailValue.indexOf('.');
+
+        if (indexArobas !== -1 && indexDot !== -1 ){
+            modalContent.style.display = "none";
+            modalContent2.style.display = "block"
+        } else {
+            window.alert("Adresse courriel non valide")
+        }
+    }
+    
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    span2.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    ferme.onclick = function() {
+        modal.style.display = "none";
+    }
+    </script>
