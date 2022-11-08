@@ -63,8 +63,6 @@ table{
     position: absolute;
 width: 250px;
 height: 425px;
-visibility: hidden;
-
 }
 .titrenom {
     color: yellow;
@@ -74,9 +72,8 @@ font-size: medium;
 }
 .musiciens{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    flex-direction: row;
-    justify-content: space-evenly;
 }
 
 
@@ -99,7 +96,6 @@ font-size: medium;
     opacity: 0;
     /* On cache l'élément via son opacité */
     transition: opacity 0.25s ease-in-out;
-    /* Effet de transition sur le hover */
   
     /* Style du contenu hover */
     background: rgba(0, 0, 0, 0.8);
