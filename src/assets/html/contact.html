@@ -71,8 +71,6 @@
 
             <label for="province" id="province-label">Province</label>
             <select id="province" name="province">
-              <!--une value devrait être simplifiée au plus court chemin, 
-              donc les lettres identifiant les provinces c'est mieux que d'écrire les noms tout au long-->
               <option value="ab">Alberta</option>
               <option value="bc">Colombie-Britannique</option>
               <option value="pei">Île-du-Prince-Édouard</option>
@@ -86,92 +84,86 @@
             </select>
 
             <label for="pays" id="pays-label">Pays</label>
-            <input type="text" id="pays" name="pays" value="Canada" />
+            <input type="text" id="pays" name="pays" value="Canada" readonly/>
 
             <label for="postal" id="postal-label">Code Postal</label>
             <input
               type="text"
               id="postal"
               name="postal"
-              pattern="[GHJ][0-9][A-Z][ ][0-9][A-Z][0-9]"
-            />
+              pattern="[GHJ][0-9][A-Z][ ][0-9][A-Z][0-9]"/>
           </div>
         </fieldset>
 
         <fieldset id="g3">
-          <div>
-            <label for="couleur" id="couleur-label"
-              >Votre couleur préférée?</label
-            >
-            <input type="color" id="couleur" name="couleur" />
+            <div id="choice">
+                <label for="couleur" id="couleur-label">Votre couleur préférée?</label>
+                <input type="color" id="couleur" name="couleur" />
 
-            <label for="images" id="images-label">Vos images préférées?</label>
-            <input type="file" id="images" name="images" multiple />
+                <label for="images" id="images-label">Vos images préférées?</label>
+                <input type="file" id="images" name="images" multiple />
 
-            <label for="mois" id="mois-label"
-              >Votre mois préféré? De quelle année?</label
-            >
-            <input type="month" id="mois" name="mois" />
+                <label for="mois" id="mois-label">Votre mois préféré? De <br> quelle année?</label>
+                <input type="month" id="mois" name="mois" />
 
-            <label for="semaine" id="semaine-label"
-              >Votre semaine préférée de tous les temps?</label
-            >
-            <input type="week" id="semaine" name="semaine" />
+                <label for="semaine" id="semaine-label">Votre semaine préférée de tous les temps?</label>
+                <input type="week" id="semaine" name="semaine" />
 
-            <label for="siteweb" id="web-label"
-              >Un site que nous devons découvrir?</label
-            >
-            <input type="url" id="siteweb" name="siteweb" />
+                <label for="siteweb" id="web-label">Un site que nous devons découvrir?</label>
+                <input type="url" id="siteweb" name="siteweb" />
 
-            <label for="note" id="note-label"
-              >Quelle note lui donnez-vous?</label
-            >
-            <input type="range" id="note" name="note" />
+                <label for="note" id="note-label">Quelle note lui donnez-vous?</label>
+                <input type="range" id="note" name="note" />
 
-            <label for="dateheure" id="dateheure-label"
-              >La date et l'heure du show que tu veux venir voir?</label
-            >
-            <input type="datetime-local" id="dateheure" name="dateheure" />
-            <label for="choix" id="choix-label">Durant ce show, tu veux...</label>
-            <div id="check">
-              <label for="danser" id="danser-label">Danser</label>
-              <input type="checkbox" id="danser" name="danser" />
-              <label for="groover" id="groover-label">Groover</label>
-              <input type="checkbox" id="groover" name="groover"/>
-              <label for="couchertard" id="couchertard-label"/>Me coucher tard</label>
-              <input type="checkbox" id="couchertard" name="couchertard" />
+                <label for="dateheure" id="dateheure-label">La date et l'heure du show que tu veux venir voir?</label>
+                <input type="datetime-local" id="dateheure" name="dateheure" />
+
+                <label for="choix" id="choix-label">Durant ce show, tu veux...</label>
+                <div id="check">
+                    <label for="danser" id="danser-label">Danser</label>
+                    <input type="checkbox" id="danser" name="danser" />
+                    <label for="groover" id="groover-label">Groover</label>
+                    <input type="checkbox" id="groover" name="groover"/>
+                    <label for="couchertard" id="couchertard-label">Me coucher tard</label>
+                    <input type="checkbox" id="couchertard" name="couchertard" />
+                </div>
             </div>
-          </div>
         </fieldset>
 
         <fieldset id="g4">
-          <legend>Votre membre du groupe préféré?</legend>
-          <div id="flex">
-            <input type="radio" id="alain" name="alain" />
-            <label for="alain">Alain Jasmine</label>
-            <input type="radio" id="jacques" name="jacques" />
-            <label for="jacques">Jacques Danger</label>
-            <input type="radio" id="dove" name="dove" />
-            <label for="dove">Dove</label>
-            <input type="radio" id="drhomme" name="drhomme" />
-            <label for="drhomme">Dr Homme</label>
-          </div>
+            <legend>Votre membre du groupe préféré?</legend>
+            <div id="flex">
+                <div id="choix-alain">
+                    <input type="radio" id="alain" name="alain" />
+                    <label for="alain">Alain Jasmine</label>
+                </div>
+                <div id="choix-jacques">
+                    <input type="radio" id="jacques" name="jacques" />
+                    <label for="jacques">Jacques Danger</label>
+                </div>
+                <div id="choix-dove">
+                    <input type="radio" id="dove" name="dove" />
+                    <label for="dove">Dove</label>
+                </div>
+                <div id="choix-drhomme">
+                    <input type="radio" id="drhomme" name="drhomme" />
+                    <label for="drhomme">Dr Homme</label>
+                </div>
+            </div>
         </fieldset>
 
-        <div id="g5">
-          <label for="motpasse">Mot de paaaaaaaaaasse?</label>
-          <input
-            type="password"
-            id="motpasse"
-            name="motpasse"
-            pattern="Kaput Draconis"
-          />
-        </div>
-
-        <button type="reset" id="reset" name="reset">Réinitialiser</button>
-        <button type="submit" id="submit-form" name="submit-form">
-          Soumettre
-        </button>
+        <fieldset id="g5">
+            <div>
+                <label id="mot-label" for="motpasse">Mot de paaaaaaaaaasse?</label>
+                <input type="password" id="motpasse" name="motpasse" pattern="Kaput Draconis"/>
+            </div>
+        </fieldset>
+        <!-- nous devons mettre des balises input au lieu de button car le lien app.css appelle le style 
+        déjà fait pour les boutons de la page spectacles et il est impossible de faire le style pour
+        la présente page -->
+        <input type="reset" id="reset" name="reset"></input>
+        <input type="submit" id="submit-form" name="submit-form"></input>
+        
       </form>
 
       <script src="/src/assets/js/contact.js"></script>

@@ -2,13 +2,11 @@ form {
   background-color: #f5c555;
   padding: 20px;
 }
-
 fieldset {
   margin: 30px;
   padding: 40px;
   border: none;
 }
-
 #g1 {
   border: 2px solid #d679a6;
 }
@@ -64,7 +62,6 @@ fieldset {
 #tel {
   grid-area: traittel;
 }
-
 #g2 {
   border: 2px solid #d679a6;
   background-color: #d9967b;
@@ -102,6 +99,7 @@ fieldset {
   margin-right: 20px;
   border: 2px solid black;
   height: 40px;
+  background-color: #d9967b;
 }
 #pays-label {
   grid-area: pays;
@@ -116,11 +114,10 @@ fieldset {
 #postal {
   grid-area: traitpostal;
 }
-
-#g3 div {
+#g3 #choice {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
   grid-template-areas:
     "couleur images mois semaine"
     "traitcouleur traitimages traitmois traitsemaine"
@@ -166,7 +163,6 @@ fieldset {
 #note-label {
   grid-area: note;
 }
-/*ajuster la largeur du range*/
 #note {
   grid-area: traitnote;
 }
@@ -180,32 +176,58 @@ fieldset {
 #choix-label {
   grid-area: choix;
 }
-/*enligner les checkbox sur une seule ligne*/
-#choix {
+#check {
   grid-area: traitchoix;
 }
-
+#check > label{
+  font-size: 12px;
+}
+#check > input {
+  margin-right: 100px;
+}
 #g4 {
   border: 2px solid #d679a6;
 }
 #flex {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "choix1 choix2 choix3 choix4"
 }
-#g5 div {
-  /*enligner le email...*/
-  text-align: left;
-  margin-left: 20px;
+#choix-alain {
+  grid-area: choix1;
 }
-
+#choix-jacques {
+  grid-area: choix2;
+}
+#choix-dove {
+  grid-area: choix3;
+}
+#choix-drhomme {
+  grid-area: choix4;
+}
+#g5 div{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas:
+    "label-mot"
+    "input-mot"
+}
+#mot-label {
+  grid-area: label-mot;
+}
+#motpasse {
+  grid-area: input-mot;
+  margin-right: 250px;
+}
 legend {
   text-align: center;
 }
-
 label {
   color: white;
 }
-
 input {
   background-color: #f5c555;
   border-style: none;
@@ -213,13 +235,11 @@ input {
   padding: 20px 0px 10px 0px;
   margin-bottom: 40px;
 }
-
 #couleur {
   height: 70px;
   width: 40px;
   border: none;
 }
-
 /*code pour le Range, à ne pas modifier*/
 #note {
   height: 20px;
@@ -227,7 +247,7 @@ input {
   margin: 12px 0px;
   padding-left: 10px;
   padding-right: 10px;
-  width: 35%;
+  width: 80%;
 }
 #note::-webkit-slider-runnable-track {
   width: 100%;
@@ -248,14 +268,20 @@ input {
 }
 /*code pour le Range, à ne pas pas modifier*/
 
-#danser {
+#check {
   margin-top: 30px;
 }
-
 #reset,
 #submit-form {
   background-color: #f5c555;
   border: 1px solid black;
+  padding: 10px 20px;
+}
+#reset{
+  margin-left: 500px;
+}
+#submit-form {
+  margin-left: 50px;
 }
 
 @media screen and (max-width: 1200px) {
