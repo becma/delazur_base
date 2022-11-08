@@ -52,7 +52,6 @@ th {
     padding: 5px;
     width:auto;
     vertical-align: top;
-
 }
 
 td{
@@ -61,14 +60,13 @@ td{
 }
 table{
     position: absolute;
-width: 250px;
-height: 425px;
+    width: 250px;
+    height: 425px;
 }
 .titrenom {
     color: yellow;
-visibility: visible;
-font-size: medium;
-
+    visibility: visible;
+    font-size: medium;
 }
 .musiciens{
     display: flex;
@@ -77,44 +75,44 @@ font-size: medium;
 }
 
 
-  .photo-musicien {
+.photo-musicien {
     width: 300px;
     vertical-align: middle;
     position: relative;
     display: flex;
     justify-content: center;
-  }
-  
-  .overlay-image .hover-image {
+    }
+
+.overlay-image .hover-image {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-  
+
     /* Effets de transition */
     opacity: 0;
     /* On cache l'élément via son opacité */
     transition: opacity 0.25s ease-in-out;
-  
+
     /* Style du contenu hover */
     background: rgba(0, 0, 0, 0.8);
     color: white;
     padding: 30px;
-  
+
     /* Centrer le contenu */
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
-  }
-  
-  .photo-musicien:hover {
+}
+
+.photo-musicien:hover {
     opacity: 50%;
-  }
-  
-  
+}
+
+
 
 
 
