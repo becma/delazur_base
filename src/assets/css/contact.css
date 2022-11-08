@@ -114,7 +114,7 @@ fieldset {
 #postal {
   grid-area: traitpostal;
 }
-#g3 #choice {
+#g3 > div {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, auto);
@@ -284,11 +284,31 @@ input {
   margin-left: 50px;
 }
 
-@media screen and (max-width: 1200px) {
-  form {
+@media screen and (max-width: 1200px) {  
+  #g1 > div {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+  }
+  #g2 > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #g3 > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #g4 > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #g5 > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
+
