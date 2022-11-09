@@ -45,132 +45,17 @@ main > section > article > h2 {
     padding: 30px 0 30px 0;
 }
 
-/*fiches des artistes*/
-
-th {
-    text-align:left;
-    padding: 5px;
-    width:auto;
-    vertical-align: top;
-}
-
-td{
-    width: 50%;
-    border-bottom: 1.5px white;
-}
-table{
-    position: absolute;
-    width: 250px;
-    height: 425px;
-}
-.titrenom {
-    color: yellow;
-    visibility: visible;
-    font-size: medium;
-}
-.musiciens{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-
-.photo-musicien {
-    width: 300px;
-    vertical-align: middle;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    }
-
-.overlay-image .hover-image {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-
-    /* Effets de transition */
-    opacity: 0;
-    /* On cache l'élément via son opacité */
-    transition: opacity 0.25s ease-in-out;
-
-    /* Style du contenu hover */
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 30px;
-
-    /* Centrer le contenu */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
-
-.photo-musicien:hover {
-    opacity: 50%;
-}
-
-/*
-main {
-    background-color: black;
-}
-
-.pc_element {
-    background-color: #f5c555;
-    color: black;
-    position: relative;
-    padding: 40px;
-    height: 300px;
-}
-.pc_element_album {
-    width: 285px;
-}
-
-.pc_element_contenu_titre-album {
-    font-size: 48px;
-    font-weight: 700;
-}
-
-.pc_element_contenu_spotify {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
-
-.pc_element_contenu_spotify_texte_titre {
-    font-weight: bold;
-}
-
-.pc_album_effet {
-    display: none;
-}
-
-[class^="pc_element_album_effet"] {
-    display: none;
-}
-
-.pc_presentation {
-    padding: 20px;
-}
-
-main > section > article > h2 {
-    color: #d679a6;
-    padding: 30px 0 30px 0;
-}
-
 .pc_boite_carte_contenu_nom {
     padding: 10px;
     color: #f5c555;
 }
 .pc_boite_carte {
-    width: 300px;
+    width: 400px;
     margin: 40px auto 10px auto;
 }
 
 .pc_boite_carte_photo {
-    width: 300px;
+    width: 400px;
     position: absolute;
     z-index: 1;
 }
@@ -189,7 +74,7 @@ main > section > article > h2 {
 }
 .pc_boite_carte_contenu_desc {
     margin: auto;
-    width: 280px;
+    width: 400px;
     height: 327px;
     border-collapse: collapse;
 }
@@ -225,7 +110,7 @@ main > section > article > h2 {
 
     .pc_element_album_effet1 {
         z-index: 1;
-        left: 270x;
+        left: 270px;
         opacity: 0.1;
     }
 
@@ -284,6 +169,7 @@ main > section > article > h2 {
     .pc_boite_carte_contenu {
         background-color: rgba(0, 0, 0, 0);
                 height: 449px;
+                width: 400px;
         bottom: 17px;
     }
 
