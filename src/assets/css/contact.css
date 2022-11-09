@@ -1,0 +1,30 @@
+form{
+    background-color: #DDB05C;
+    padding: 30px;
+
+}
+/*Style de la premiere partie*/
+.infogeneral{
+border-style: solid;
+border-color: #be7685;
+}
+
+
+/*Style de la deuxieme partie*/
+.adresse{
+background-color: #be7685;
+}
+
+
+/*Style de la troisieme partie*/
+.gouts{
+
+
+}
+
+
+/*Style de la quatrieme partie*/
+.membre{
+border-color: #be7685;
+border-style: solid;
+}
