@@ -45,7 +45,7 @@ main > section > article > h2 {
     margin: 40px auto 10px auto;
 }
 .pc_boite_carte_photo {
-    width: 400px;
+    width: 300px;
     position: absolute;
     z-index: 1;
 }
@@ -54,7 +54,7 @@ main > section > article > h2 {
     z-index: 10;
     color: white;
     background-color: rgba(0, 0, 0, 0.738);
-    height: 399px;
+    height: 450px;
 }
 .pc_boite_carte_contenu_desc_text {
     text-align: left;
@@ -137,8 +137,7 @@ main > section > article > h2 {
     }
     .pc_boite_carte_contenu {
         background-color: rgba(0, 0, 0, 0);
-        width: 399px;
-                height: 599px;
+        height: 449px;
         bottom: 17px;
     }
     .pc_boite_carte_contenu_desc {
@@ -149,7 +148,7 @@ main > section > article > h2 {
     }
     
     .pc_boite_carte_contenu:hover {
-        background-color: rgba(255, 0, 0, 0.738);
+        background-color: rgba(0, 0, 0, 0.738);
     }
 }
 @media screen and (max-width: 767px) {
