@@ -1,0 +1,91 @@
+.abonne {
+    background-color: #f5c555;
+    color: #fff;
+    font-size: 1.7rem;
+    letter-spacing: 0.7rem;
+    height: fit-content;
+    padding: 2rem 7rem 2rem 7rem;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .abonne:hover, .abonne:focus, .mainbtn:hover, .ferme:hover {
+    background-color: #d679a6;
+    outline: none;
+  }
+  
+  .boutonferme {
+    float: right;
+    background-color: #f5c555;
+    border: none;
+    margin: 1rem;
+    font-size: larger; 
+  }
+  
+  .boutonferme:hover {
+    color: #d679a6;
+    text-decoration: underline #d679a6 solid 2px;
+  }
+  
+  h4 {
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem 3rem 0rem 3rem;
+    white-space: nowrap;
+  }
+  
+  p {
+    text-align: left;
+    color: #fff;
+    font-size: large;
+    padding: 0rem 2rem 1.5rem 3rem; 
+  }
+  
+  .myModal {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .modalcontent, .modalsubmit {
+    display: none;
+    background-color: #f5c555;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  input {
+    color: #fff;
+    background-color: #f5c555;
+    border: none;
+    border-bottom: solid 1px #000;
+    padding: 1rem;
+    width: 75%;
+  }
+  
+  input::placeholder {
+    color: #000; 
+  }
+  
+  .mainbtn, .ferme {
+    font-size: larger;
+    border: none;
+    padding: 1rem;
+    margin: 2rem;
+  }
+  
+  .ferme {
+    display: block;
+    margin: auto ;
+    margin-bottom: 3rem;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
