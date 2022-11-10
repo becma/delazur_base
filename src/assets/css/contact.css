@@ -1,30 +1,229 @@
+/*Style en général*/
 form{
     background-color: #DDB05C;
     padding: 30px;
-
 }
-/*Style de la premiere partie*/
+
+legend {
+    text-align: center;
+}
+
+input:not(.check_ca, .couleur_input ) {
+    width: 75%;
+    padding: 15px;
+    display: block;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom: solid black 1px;
+}
+
+.couleur_input {
+    display: block;
+    padding: 0px;
+    margin: 15px;
+}
+
 .infogeneral{
-border-style: solid;
-border-color: #be7685;
+    margin-top: 30px;
+    border-style: solid;
+    border-color: #D9967A;
 }
 
+.infogeneral_in {
+    margin: 40px 0 0 0;
+}
 
-/*Style de la deuxieme partie*/
 .adresse{
-background-color: #be7685;
+    background-color: #D9967A;
+    border: 2px solid #D2818B;
+    margin: 40px auto 40px auto;
 }
 
-
-/*Style de la troisieme partie*/
-.gouts{
-
-
+.adresse_in {
+    margin: 40px;
 }
 
+.adresse_in_input {
+    width: 80%;
+}
 
-/*Style de la quatrieme partie*/
+.adresse_in_selection {
+    display: block;
+    background-color: #d9967a00;
+    border: solid black 1px;
+    padding: 15px;
+}
+
 .membre{
-border-color: #be7685;
-border-style: solid;
+    border-color: #D9967A;
+    border-style: solid;
+}
+
+.gouts {
+    border: solid 0px;
+    margin-bottom: 40px;
+}
+
+.mdp {
+    border: solid 0px;
+    margin: 50px 0 50px 0;
+}
+
+.gouts_in {
+    margin: 40px 0 0 0;
+}
+
+.gouts_in_input {
+    width: 75%;
+    padding: 15px;
+}
+
+.veuxtucheck {
+    position: absolute;
+}
+
+.check_ca1, .check_ca2, .check_ca3 {
+    position: relative;
+}
+
+.check_ca1 {
+    margin-left: -22%;
+}
+
+.check_ca2 {
+    margin-left: -20%;
+}
+
+.check_ca3 {
+    margin-left: -8%;
+}
+
+:root {
+    --form-control-color: rebeccapurple;
+}
+
+*,*:before,*:after {
+    box-sizing: border-box;
+}
+
+.membre-pref {
+    margin: 0 35px 0 35px;
+}
+
+.membre-pref-choix {
+    display: grid;
+    grid-template-columns: 1em auto;
+    gap: 0.5em;
+}
+
+input[type=range] {
+    height: 25px;
+    -webkit-appearance: none;
+    width: 100%;
+}
+input[type=range]:focus {
+    outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 4px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #D779A6;
+    background: #D779A6;
+    border-radius: 50px;
+    border: 1px solid #D779A6;
+}
+input[type=range]::-webkit-slider-thumb {
+    box-shadow: 0px 0px 0px #D779A6;
+    border: 2px solid #D779A6;
+    height: 17px;
+    width: 17px;
+    border-radius: 17px;
+    background: #FFFFFF;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -8px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #D779A6;
+}
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 4px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #D779A6;
+    background: #D779A6;
+    border-radius: 50px;
+    border: 1px solid #D779A6;
+}
+input[type=range]::-moz-range-thumb {
+    box-shadow: 0px 0px 0px #D779A6;
+    border: 2px solid #D779A6;
+    height: 17px;
+    width: 17px;
+    border-radius: 17px;
+    background: #FFFFFF;
+    cursor: pointer;
+}
+input[type=range]::-ms-track {
+    width: 100%;
+    height: 4px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+    background: #D779A6;
+    border: 1px solid #D779A6;
+    border-radius: 100px;
+    box-shadow: 1px 1px 1px #D779A6;
+}
+input[type=range]::-ms-fill-upper {
+    background: #D779A6;
+    border: 1px solid #D779A6;
+    border-radius: 100px;
+    box-shadow: 1px 1px 1px #D779A6;
+}
+input[type=range]::-ms-thumb {
+    margin-top: 1px;
+    box-shadow: 0px 0px 0px #D779A6;
+    border: 2px solid #D779A6;
+    height: 17px;
+    width: 17px;
+    border-radius: 17px;
+    background: #FFFFFF;
+    cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+    background: #D779A6;
+}
+input[type=range]:focus::-ms-fill-upper {
+    background: #D779A6;
+}
+
+#boutons-soumission {
+    margin: 20px;
+    text-align: center;
+}
+
+.boutonform {
+    width: 15rem;
+    background-color: #d2818a00;
+    padding: 15px;
+    border: solid 1px black;
+    margin: 15px;
+}
+
+input[type="color"] {
+	-webkit-appearance: none;
+	border: none;
+	width: 32px;
+	height: 32px;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+	border: none;
 }

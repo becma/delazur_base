@@ -35,112 +35,122 @@
             <!--Premiere partie: informations generales- Encadrement rose (CSS)-->
             <fieldset class="infogeneral">
               <legend>Informations generales</legend>
-              <div class="infogenerales">
+              <div class="infogeneral_in">
                 <label for="prenom">Prenom</label>
-                <input type="text" id="prenom" name="prenom" required minlength="2">
+                <input class="infogeneral_in_input" type="text" id="prenom" name="prenom" required minlength="2">
               </div>
-              <div>
+              <div class="infogeneral_in">
                 <label for="nom">Nom de famille</label>
-                <input type="text" id="nomfamille" name="nom" requiredminlength="2" maxlength="30" size="">
+                <input class="infogeneral_in_input" type="text" id="nomfamille" name="nom" requiredminlength="2" maxlength="30" size="">
               </div>
-              <div>
+              <div class="infogeneral_in">
                 <label for="courriel">Adresse courriel</label>
-                <input type="email" id="adressecourriel" name="courriel" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+                <input class="infogeneral_in_input" type="email" id="adressecourriel" name="courriel" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
                 requiredminlength="2">
               </div>
+              <div class="infogeneral_in">
               <label for="date">Date de Naissance</label>
-              <input type="date" name="anniversaire" value="yyyy-mm-dd" required>
+              <input class="infogeneral_in_input" type="date" name="anniversaire" value="yyyy-mm-dd" required>
               </div>
-              <div>
-                <label for="age">Et ton âge</label>
-                <input type="number" id="age" value="min=01 max" required>
+              <div class="infogeneral_in">
+                <label for="age">Et ton âge ?</label>
+                <input class="infogeneral_in_input" type="number" id="age" min="01" max="99" required>
               </div>
-              <div>
+              <div class="infogeneral_in">
                 <label for="numerotel">Numero de telephone</label>
-                <input type="tel" id="numerotel" pattern="[0-9]{3} [0-9]{3} [0-9]{4}">
-              </div>
+                <input class="infogeneral_in_input" type="tel" id="numerotel" pattern="[0-9]{3} [0-9]{3} [0-9]{4}">
               </div>
             </fieldset>
             <!--Deuxieme partie: Adresse - Encadrement + fond rose (CSS)-->
             <fieldset class="adresse">
-                <legend>Adresse</legend>
+              <legend>Adresse</legend>
                 <div>
-                  <div>
-                    <label for="civique">Numero Civique</label>
-                    <input type="number" id="numcivique" name="numcivique">
+
+                  <div class="adresse_in">
+                    <label class="adresse_in_label" for="civique">Numero Civique</label>
+                    <input class="adresse_in_input" type="number" id="numcivique" name="numcivique">
                   </div>
-                  <div class="adresse">
-                    <div>
-                      <label for="rue">Rue</label>
-                      <input type="text" id="rue" name="rue">
-                    </div>
-                        <label for="province">Province</label>
-                        <select name="province"id="province" required>
-                          <option value="AB">Alberta</option>
-                          <option value="CB">Colombie-Britannique</option>
-                          <option value="IPE">Île-du-Prince-Édouard</option>
-                          <option value="MAN">Manitoba</option>
-                          <option value="NB">Nouveau-Brunswick</option>
-                          <option value="NE">Nouvelle-Écosse</option>
-                          <option value="ONT">Ontario</option>
-                          <option value="QC">Québec</option>
-                          <option value="SASK">Saskatchewan</option>
-                          <option value="TNL">Terre-Neuve-et-Labrador</option>
-                          <option value="TNO">Territoire du Nord-Ouest</option>
-                          <option value="YN">Yukon</option>
-                        </select>
-                      </div>
-                      <div>
-                        <label for="pays">Pays</label>
-                        <input type="country" id="pays" name="pays">
-                      </div>
+
+                  <div class="adresse_in">
+                    <label class="adresse_in_label" for="rue">Rue</label>
+                    <input class="adresse_in_input" type="text" id="rue" name="rue">
+                  </div>
+
+                  <div class="adresse_in">
+                    <label class="adresse_in_label" for="province">Province</label>
+                    <select class="adresse_in_selection" name="province"id="province" required>
+                      <option value="AB">Alberta</option>
+                      <option value="CB">Colombie-Britannique</option>
+                      <option value="IPE">Île-du-Prince-Édouard</option>
+                      <option value="MAN">Manitoba</option>
+                      <option value="NB">Nouveau-Brunswick</option>
+                      <option value="NE">Nouvelle-Écosse</option>
+                      <option value="ONT">Ontario</option>
+                      <option value="QC">Québec</option>
+                      <option value="SASK">Saskatchewan</option>
+                      <option value="TNL">Terre-Neuve-et-Labrador</option>
+                      <option value="TNO">Territoire du Nord-Ouest</option>
+                      <option value="YN">Yukon</option>
+                    </select>
+                  </div>
+
+                  <div class="adresse_in">
+                    <label class="adresse_in_label" for="pays">Pays</label>
+                    <input class="adresse_in_input" type="country" id="pays" name="pays" value="Canada">
+                  </div>
+
+                </div>
             </fieldset>
             <!--Troisieme partie: Gouts perso du visiteur- Sans encadrement (CSS)-->
             <fieldset class="gouts">
               <div class="gouts">
-                <div>
-                  <label for="couleur">Votre couleur préférée</label>
-                  <input type="color" id="choixcouleur" name="couleur" value="">
+                <div class="couleur">
+                  <label for="couleur">Votre couleur préférée?</label>
+                  <input class="couleur_input" type="color" id="choixcouleur" name="couleur" value="">
                 </div>
-                <div>
+                <div class="gouts_in">
                   <label for="telechargementimage">Vos images préférées?</label>
-                  <input type="file" name="imagetelecharge" multiple="selection" accept="image/png" , accept="image/jpeg">
+                  <input class="gouts_in_input" type="file" name="imagetelecharge" multiple="selection" accept="image/png" , accept="image/jpeg">
                 </div>
-                <div>
-                  <label for="moisprefere">Votre mois prefere? De quelle annee?</label>
-                  <input type="month" id="mois" name="moisprefere" value="yyyy-dd">
+                <div class="gouts_in">
+                  <label for="moisprefere">Votre mois prefere? De quelle année?</label>
+                  <input class="gouts_in_input" type="month" id="mois" name="moisprefere" value="yyyy-dd">
                 </div>
-                <div>
+                <div class="gouts_in">
                   <label for="semaine">Votre semaine preferee de tous les temps?</label>
-                  <input type="week" name="semaine" id="semainepreferee" value="yyyy-w01">
+                  <input class="gouts_in_input" type="week" name="semaine" id="semainepreferee" value="yyyy-w01">
                 </div>
-                <label class="site" for="url">Un site que nous devons découvrir?</label>
-                <input type="url">
               </div>
               <div>
-                <label class="note" for="note">Quelle note lui donnez-vous?</label>
+                <div class="gouts_in">
+                  <label class="site" for="url">Un site que nous devons découvrir?</label>
+                  <input type="url">  
+                </div>
+                <div class="gouts_in">
+                  <label label class="note" for="note">Quelle note lui donnez-vous?</label>
                 <!--Texte en rose (CSS)-->
-                <input type="range" id="volume" name="volume" min="0" max="20" style="width: 7em">
+                  <input class="gouts_range" type="range" id="volume" name="volume" min="0" max="100" style="width: 80%">                  
+                </div>
               </div>
-              <div>
-                <label class="date" for="date">La date et l'heure du show que tu veux venir voir?
+              <div class="gouts_in">
+                <label for="date">La date et l'heure du show que tu veux venir voir?
                 </label>
                 <input type="datetime-local" id="date" name="date" value="yyyy-mm-dd, --:-- --">
               </div>
-              <div>
+              <div class="gouts_in">
                 <div id="checkbox">
                   <p>Durant ce show, tu veux...</p>
                   <div id="checkbox1">
-                    <label for="danser">Danser</label>
-                    <input type="checkbox" id="danser" name="danser">
+                    <label class="veuxtucheck" for="danser">Danser</label>
+                    <input class="check_ca1" type="checkbox" id="danser" name="danser">
                   </div>
                   <div id="checkbox2">
-                    <label for="groove">Groover</label>
-                    <input type="checkbox" id="groove" name="groove">
+                    <label class="veuxtucheck" for="groove">Groover</label>
+                    <input class="check_ca2" type="checkbox" id="groove" name="groove">
                   </div>
                   <div id="checkbox3">
-                    <label for="coucher">Me coucher tard</label>
-                    <input type="checkbox" id="coucher" name="coucher">
+                    <label class="veuxtucheck" for="coucher">Me coucher tard</label>
+                    <input class="check_ca3" type="checkbox" id="coucher" name="coucher">
                   </div>
                 </div>
               </div>
@@ -148,34 +158,42 @@
             <!--Quatrieme partie: Membre prefere - Encadrement rose (CSS)-->
             <fieldset class="membre">
               <legend>Votre membre du groupe préféré?</legend>
-              <div>
-                <input type="radio" id="alain" name="membre-pref" value="Alain">
-                <label for="alain">Alain Jasmine</label>
+              <div class="membre-pref">
+                <div class="membre-pref-choix">
+                  <input  type="radio" id="checkbox1" name="membre-pref" value="Alain">
+                  <label  for="alain">Alain Jasmine</label>
+                </div>
+                <div class="membre-pref-choix">
+                  <input  type="radio" id="jacques" name="membre-pref" value="Jacques">
+                  <label  for="jacques">Jacques Danger</label>
+                </div>
+                <div class="membre-pref-choix">
+                  <input  type="radio" id="dove" name="membre-pref" value="Dove">
+                  <label  for="dove">Dove</label>
+                </div>
+                <div class="membre-pref-choix">
+                  <input type="radio" id="dr" name="membre-pref" value="Dr">
+                  <label  for="dr"> Dr Homme</label>
+                </div>
               </div>
-              <div>
-                <input type="radio" id="jacques" name="membre-pref" value="Jacques">
-                <label for="jacques">Jacques Danger</label>
-              </div>
-              <div>
-                <input type="radio" id="dove" name="membre-pref" value="Dove">
-                <label for="dove">Dove</label>
-              </div>
-              <div>
-                <input type="radio" id="dr" name="membre-pref" value="Dr">
-                <label for="dr"> Dr Homme</label>
-              </div>
+
             </fieldset>
-            <fieldset>
+            <fieldset class="mdp">
               <label for="mdp">Mot de paaaaaaaaaasse?</label>
               <input type="password" id="mdp" name="mdp" pattern="Kaput Draconis">
             </fieldset>
             <!--Cinquieme partie: Boutons de navigation-->
             <div id="boutons-soumission">
-              <button class="reset" type="reset" form=contact value="reset">Réinitialiser</button>
-              <button class="submit" type="submit" form="contact" value="submit">Soumettre</button>
+              <button class="boutonform" type="reset" form=contact value="reset">Réinitialiser</button>
+              <button class="boutonform" type="submit" form="contact" value="submit">Soumettre</button>
               <!--on devrait pas enlever submit ? selon le message du 28-10 sur teams-->
             </div>
           </form>
+
+
+
+
+
     </main>
     <footer>
         <div>
