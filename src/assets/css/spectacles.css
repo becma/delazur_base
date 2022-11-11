@@ -99,23 +99,23 @@
 /*----------------------SALLES----------------------*/
 
 
- #imperial {
-   grid-area: 1 / 3 / 2 / 6;
+  #imperial {
+    grid-area: 1 / 3 / 2 / 6;
   }
 
- #anti {
+  #anti {
       grid-area: 2 / 2 / 3 / 5;
   }
 
- #source {
+  #source {
       grid-area: 3 / 4 / 4 / 7;
   }
 
- #club {
+  #club {
       grid-area: 4 / 1 / 5 / 4;
   }
 
- #cafe {
+  #cafe {
       grid-area: 5 / 2 / 6 / 5;
   }
 
@@ -159,161 +159,4 @@
 
 
 
-
-
-
-
-
-
-
-/*h2 {
-  color: #d679a6;
-  font-family: 'Damion', serif;
-  font-size: 4em;
-  letter-spacing: 8px;
-  padding-bottom: 50px;
-  text-align: center;
-}
-
-.shows {
-  background-color:rgb(153, 110, 18);
-  border: 1px solid #d679a6;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-bottom: 30px;
-}
-
-button {
-  
-  background-color: #d679a6;
-  border: 1px solid #f5c555;
-  float: right;
-  height: 50px;
-  width: 120px;
-  
-}
-
-#informations {
-  float: left;
-}
-
-button:focus, button:hover {
-  background: white;
-}
-
-button a {
-  color: black;
-text-decoration: none;
-}
-
-/*h3 {
-  font-size: 3rem;
-  padding: 5px 0 0 20px;
-  margin-bottom: 0;
-}*/
-
-/*.datecard {
-  display: flex;
-  align-items: center;
-  justify-content: space-around:center;
-  background-color:#493a1b;
-  border: 1px solid #d679a6;
-  padding: 1rem 2rem;
-}
-
-#dates {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin: auto;
-}
-
-#villes {
-  padding: 0rem, 2rem, 2rem, 2rem ;
-}
-
-h3 {
-  font-size: 3rem;
-  margin: 0;
-}
-.lieux {
-  font-size: 2rem;
-  padding: 0 0 5px 20px;
-}
-
-
-
-
-
-@media screen and (min-width: 1224px) {
-
-  .container {
-    align-content: center;
-    align-items: center;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(13, 1fr);
-    height: auto;
-    width: 100%;
-  }
-
-  #event_1 {
-    grid-area: 1 / 5 / 2 / 9;
-  }
-
-  #event_2 {
-    grid-area: 2 / 4 / 3 / 8;
-  }
-
-  #event_3 {
-    grid-area: 3 / 6 / 4 / 10;
-  }
-
-  #event_4 {
-    grid-area: 4 / 2 / 5 / 6;
-  }
-
-  #event_5 {
-    grid-area: 5 / 4 / 6 / 8;
-  }
-
-  #event_6 {
-    grid-area: 6 / 5 / 7 / 8;
-  }
-
-  #event_7 {
-    grid-area: 7 / 6 / 8 / 10;
-  }
-
-  #event_8 {
-    grid-area: 8 / 4 / 9 / 8;
-  }
-
-  #event_9 {
-    grid-area: 8 / 8 / 9 / 12;
-  }
-
-  #event_10 {
-    grid-area: 9 / 5 / 10 / 9;
-  }
-
-  #event_11 {
-    grid-area: 10 / 6 / 11 / 10;
-  }
-
-  #event_12 {
-    grid-area: 11 / 5 / 12 / 9;
-  }
-
-  #event_13 {
-    grid-area: 1 / 5 / 2 / 9;
-  }
-}
 
