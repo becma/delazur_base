@@ -34,9 +34,9 @@
         <form action="" method="get" class="form" target="_blank">
             <!--Premiere partie: informations generales- Encadrement rose (CSS)-->
             <fieldset class="infogeneral">
-                <legend>Informations generales</legend>
+                <legend>Informations générales</legend>
                 <div id="prenom" class="infogeneral_in">
-                    <label for="prenom">Prenom</label>
+                    <label for="prenom">Prénom</label>
                     <input class="infogeneral_in_input" type="text" id="prenom" name="prenom" required minlength="2">
                 </div>
                 <div id="nom" class="infogeneral_in">
@@ -56,7 +56,7 @@
                     <input class="infogeneral_in_input" type="number" id="age" min="01" max="99" required>
                 </div>
                 <div id="tel" class="infogeneral_in">
-                    <label for="numerotel">Numero de telephone</label>
+                    <label for="numerotel">Numéro de téléphone</label>
                     <input class="infogeneral_in_input" type="tel" id="numerotel" pattern="[0-9]{3} [0-9]{3} [0-9]{4}">
                 </div>
             </fieldset>
@@ -65,7 +65,7 @@
                 <legend>Adresse</legend>
                 <div class="adresse_box">
                     <div id="numciv" class="adresse_in">
-                        <label class="adresse_in_label" for="civique">Numero Civique</label>
+                        <label class="adresse_in_label" for="civique">Numéro Civique</label>
                         <input class="adresse_in_input" type="number" id="numcivique" name="numcivique">
                     </div>
                     <div id="rue" class="adresse_in">
@@ -94,8 +94,8 @@
                         <input class="adresse_in_input" type="country" id="pays" name="pays" value="Canada">
                     </div>
                     <div id="codepostal" class="adresse_in">
-                        <label class="adresse_in_label" for="pays">Pays</label>
-                        <input class="adresse_in_input" type="country" id="pays" name="pays" value="Canada">
+                        <label class="adresse_in_label" for="codepostal">Code Postal</label>
+                        <input class="codepostal" type="text" id="codepostal" name="codepostal" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]">
                     </div>
                 </div>
             </fieldset>
@@ -108,21 +108,21 @@
                     </div>
                     <div id="imagepref" class="gouts_in">
                         <label for="telechargementimage">Vos images préférées?</label>
-                        <input class="gouts_in_input" type="file" name="imagetelecharge" multiple="selection" accept="image/png" , accept="image/jpeg">
+                        <input class="gouts_in_input" type="file" name="imagetelecharge" multiple="multiple" accept="image/png" , accept="image/jpeg">
                     </div>
                     <div id="moispref" class="gouts_in">
-                        <label for="moisprefere">Votre mois prefere? De quelle année?</label>
+                        <label for="moisprefere">Votre mois préféré? De quelle année?</label>
                         <input class="gouts_in_input" type="month" id="mois" name="moisprefere" value="yyyy-dd">
                     </div>
                     <div id="semainepref" class="gouts_in">
-                        <label for="semaine">Votre semaine preferee de tous les temps?</label>
+                        <label for="semaine">Votre semaine preferée de tous les temps?</label>
                         <input class="gouts_in_input" type="week" name="semaine" id="semainepreferee" value="yyyy-w01">
                     </div>
                 </div>
                 <div id="goutsrange2">
                     <div id="site" div class="gouts_in">
                         <label class="site" for="url">Un site que nous devons découvrir?</label>
-                        <input id="sitepref" type="url">  
+                        <input id="sitepref" type="url" pattern="https:?//.*">  
                     </div>
                     <div id="note" class="gouts_in">
                         <label label class="note" for="note">Quelle note lui donnez-vous?</label>
@@ -181,7 +181,7 @@
             </fieldset>
             <!--Cinquieme partie: Boutons de navigation-->
             <div id="boutons-soumission">
-                <button class="boutonform" type="reset" form=contact value="reset">Réinitialiser</button>
+                <button class="boutonform" type="reset" form="contact" value="reset">Réinitialiser</button>
                 <button class="boutonform" type="submit" form="contact" value="submit">Soumettre</button>
                 <!--on devrait pas enlever submit ? selon le message du 28-10 sur teams-->
             </div>
@@ -219,7 +219,7 @@
         </div>
         <div>
             <p>Production en médias interactifs</p>
-            <p>GR.06 - Juin 2021</p>
+            <p>GR.07 - Novembre 2022</p>
         </div>
     </footer>
 </body>
