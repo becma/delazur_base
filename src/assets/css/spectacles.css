@@ -2,7 +2,7 @@
 #sectionmodal {
   display: flex;
   align-items: center;
-  width: 44rem;
+  width: 50.5rem;
 }
 /* added this for section sizing in mobile*/
 
@@ -43,7 +43,7 @@
     white-space: nowrap;
   }
   
-  p {
+  #aucourant {
     text-align: left;
     color: #fff;
     font-size: large;
@@ -183,6 +183,11 @@
     width: 50rem;
   }
   
+  #sectionmodal {
+    display: flex;
+    align-items: center;
+    width: 165rem;
+  }
   .visiter {
     height: 5rem;
   }
@@ -229,19 +234,22 @@
   }
   
   #leCarre {
-    grid-area: 8 / 5 / 9 / 8;
+    
+    grid-area: 8 / 2 / 9 / 5;
   }
   
   #amphitheatre {
-    grid-area: 9 / 3 / 10 / 6;
+    grid-area: 8 / 5 / 9 / 8 ;
   }
   
   #odyssee {
-    grid-area: 10 / 4 / 11 / 7;
+    grid-area: 9 / 3 / 10 / 6;
+    
   }
   
   #madrid {
-    grid-area: 8 / 2 / 9 / 5;
+    
+    grid-area: 10 / 4 / 11 / 7;
   }
   
   #zenith {
