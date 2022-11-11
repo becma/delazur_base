@@ -182,10 +182,26 @@
             <!--Cinquieme partie: Boutons de navigation-->
             <div id="boutons-soumission">
                 <button class="boutonform" type="reset" form="contact" value="reset">Réinitialiser</button>
-                <button class="boutonform" type="submit" form="contact" value="submit">Soumettre</button>
-                <!--on devrait pas enlever submit ? selon le message du 28-10 sur teams-->
+
             </div>
         </form>
+            <!--Ĵavascript form
+            <script>
+                let form = document.querySelector('form');
+                let emailInput = document.querySelector('input[type=email]');
+                form.addEventListener('submit', validateForm);
+                function validateForm() {
+                  event.preventDefault();
+                  let emailValue = emailInput.value;
+                  let indexArobas = emailValue.indexOf('@');
+                  let indexDot = emailValue.indexOf('.');
+                  if (indexArobas !== -1 && indexDot !== -1) {
+                    form.submit()
+                  }
+                  console.log(indexArboas);
+                }
+              </script>
+-->
     </main>
     <footer>
         <div>
