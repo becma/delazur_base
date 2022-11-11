@@ -154,7 +154,7 @@ main > section > article > h2 {
         background-color: rgba(0, 0, 0, 0.738);
     }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 767px) {
     .pc_element_album {
         float: right;
     }
