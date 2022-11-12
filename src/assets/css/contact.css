@@ -22,6 +22,7 @@ input:not( .couleur_input, .membre) {
 }
 
 .infogeneral{
+    width: 450px;
     margin-top: 30px;
     border-style: solid;
     border-color: #D9967A;
@@ -36,6 +37,7 @@ input:not( .couleur_input, .membre) {
 }
 
 .adresse{
+    width: 450px;
     background-color: #D9967A;
     border: 2px solid #D2818B;
     margin: 40px auto 40px auto;
@@ -58,6 +60,7 @@ input:not( .couleur_input, .membre) {
 }
 
 .membre{
+    width: 450px;
     border-color: #D9967A;
     border-style: solid;
 }
@@ -224,6 +227,11 @@ input[type="color"]::-webkit-color-swatch {
 }
 
 @media screen and (min-width: 1200px) {
+
+    .membre {
+        width: 100%;
+    }
+
     .membre-pref {
         padding: 25px;
         display: grid; 		
@@ -233,6 +241,7 @@ input[type="color"]::-webkit-color-swatch {
     }
 
     .infogeneral {
+        width: 100%;
         display: grid; 
         grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr;
         gap: 0px;
@@ -269,6 +278,10 @@ input[type="color"]::-webkit-color-swatch {
         grid-column: 1 / 5;
     }
 
+    .adresse {
+        width: 100%;
+    }
+
     .adresse_box {
         padding-top: 60px;
         display: grid; 
@@ -282,6 +295,10 @@ input[type="color"]::-webkit-color-swatch {
     }
 
     .adresse_in_selection {
+        width: 100%;
+    }
+
+    .mdp {
         width: 100%;
     }
 

@@ -24,10 +24,10 @@
         </div>
         <nav>
             <ul>
-                <li><a class="serif" href="/src/index.html">Accueil</a></li>
-                <li><a class="serif" href="/src/spectacles.html">Spectacles</a></li>
-                <li><a class="serif" href="/src/boutique.html">Boutique</a></li>
-                <li><a class="serif" href="/src/contact.html">Contact</a></li>
+                <li><a class="serif" href="index.html">Accueil</a></li>
+                <li><a class="serif" href="spectacles.html">Spectacles</a></li>
+                <li><a class="serif" href="boutique.html">Boutique</a></li>
+                <li><a class="serif" href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -171,63 +171,8 @@
             </div>
         </section>
 
-
-        <script>// Fonction ouvrir modale
-
-            const abonne = document.getElementById("abonne");
-            const myModal = document.getElementById("myModal");
-            const modalcontent = document.getElementById("modalcontent");
-            const body = document.getElementById("body");
-            const boutonferme = document.getElementById("boutonferme");
-            const mainbtn = document.getElementById("mainbtn");
-            const modalsubmit = document.getElementById("modalsubmit");
-            let inputEmail = document.getElementById("email");
-            let form = document.querySelector('form');
-            const ferme = document.getElementById("ferme");
-
-            abonne.addEventListener("click", ouvrirModal);
-
-            function ouvrirModal() {
-                modalcontent.style.display = "block";
-                myModal.style.display = "block";
-                body.style.setProperty("overflow", "hidden");
-
-            }
-
-            // Fermer la modale avec le bouton X
-
-            boutonferme.addEventListener("click", fermerModal);
-
-            function fermerModal() {
-                modalcontent.style.display = "none";
-                myModal.style.display = "none";
-            }
-
-            // Fonction validation email
-
-            form.addEventListener("submit", validateEmail);
-
-            function validateEmail() {
-                event.preventDefault();
-
-                let emailValue = inputEmail.value;
-                let indexArobas = emailValue.indexOf('@');
-                let indexPt = emailValue.indexOf('.');
-
-                if (indexArobas !== -1 && indexPt !== -1) {
-                    modalcontent.style.display = "none";
-                    modalsubmit.style.display = "block";
-                } else {
-                    inputEmail.style.backgroundColor = "#d679a6";
-                    alert("Votre courriel n'est pas valide!");
-                }
-
-            }
-
-            // Fonction fermer la modale
-
-            ferme.addEventListener("click", fermerModal);
-        </script>
+        
+        <script src="/src/assets/js/main.js">// Fonction ouvrir modale</script>
     </main>
     <footer>
         <div>
@@ -235,10 +180,10 @@
         </div>
         <div>
             <ul>
-                <li><a href="/src/index.html">Accueil</a></li>
-                <li><a href="/src/spectacles.html">Spectacles</a></li>
-                <li><a href="/src/boutique.html">Boutique</a></li>
-                <li><a href="/src/contact.html">Contact</a></li>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="spectacles.html">Spectacles</a></li>
+                <li><a href="boutique.html">Boutique</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
         <div>
