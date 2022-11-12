@@ -1,0 +1,172 @@
+main {
+    background-color: black;
+}
+.pc_element {
+    background-color: #f5c555;
+    color: black;
+    position: relative;
+    padding: 40px;
+    height: 380px;
+}
+.pc_element_album {
+    width: 285px;
+}
+.pc_element_contenu_titre-album {
+    font-size: 48px;
+    font-weight: 700;
+}
+.pc_element_contenu_spotify {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.pc_element_contenu_spotify_texte_titre {
+    font-weight: bold;
+}
+.pc_album_effet {
+    display: none;
+}
+[class^="pc_element_album_effet"] {
+    display: none;
+}
+.pc_presentation {
+    padding: 20px;
+}
+main > section > article > h2 {
+    color: #d679a6;
+    padding: 30px 0 30px 0;
+    font-family: 'Damion', serif;
+}
+.pc_boite_carte_contenu_nom {
+    padding: 10px;
+    font-weight: 300;
+    color: #f5c555;
+}
+.pc_boite_carte {
+    width: 300px;
+    margin: 40px auto 10px auto;
+}
+.pc_boite_carte_photo {
+    width: 300px;
+    position: absolute;
+    z-index: 1;
+}
+.pc_boite_carte_contenu {
+    position: relative;
+    z-index: 10;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.738);
+    height: 450px;
+}
+.pc_boite_carte_contenu_desc_text {
+    text-align: left;
+    border-bottom: solid 1px white;
+}
+.pc_boite_carte_contenu_desc {
+    margin: auto;
+    width: 280px;
+    height: 327px;
+    border-collapse: collapse;
+}
+
+@media screen and (min-width: 1224px) {
+
+    .pc_element_contenu {
+        float: right;
+    }
+    .pc_element_fond {
+        float: left;
+    }
+    .pc_element_album {
+        position: absolute;
+        z-index: 10;
+    }
+    .pc_element_album, [class^="pc_element_album_effet"] {
+        width: 300px;
+    }
+    #fleche, #fleche {
+        padding: 0 20px 0 20px;
+    }
+    [class^="pc_element_album_effet"] {
+        display: block;
+        position: absolute;
+    }
+    .pc_element_album_effet1 {
+        z-index: 1;
+        left: 270x;
+        opacity: 0.1;
+    }
+    .pc_element_album_effet2 {
+        z-index: 2;
+        left: 240px;
+        opacity: 0.2;
+    }
+    .pc_element_album_effet3 {
+        z-index: 3;
+        left: 210px;
+        opacity: 0.3;
+    }
+    .pc_element_album_effet4 {
+        z-index: 4;
+        left: 180px;
+        opacity: 0.4;
+    }
+    .pc_element_album_effet5 {
+        z-index: 5;
+        left: 150px;
+        opacity: 0.5;
+    }
+    .pc_element_album_effet6 {
+        z-index: 6;
+        left: 120px;
+        opacity: 0.6;
+    }
+    .pc_element_album_effet7 {
+        z-index: 7;
+        left: 90px;
+        opacity: 0.7;
+    }
+    .pc_element_album_effet8 {
+        z-index: 8;
+        left: 60px;
+        opacity: 0.8;
+    }
+    .pc_element_album_effet9 {
+        z-index: 9;
+        left: 30px;
+        opacity: 0.9;
+    }
+    .pc_boite {
+        display: flex;
+    }
+    .pc_boite_carte_contenu {
+        background-color: rgba(0, 0, 0, 0);
+        height: 449px;
+        bottom: 17px;
+    }
+    .pc_boite_carte_contenu_desc {
+        opacity: 0;
+    }
+    .pc_boite_carte_contenu_desc:hover {
+        opacity: 100%;
+    }
+    
+    .pc_boite_carte_contenu:hover {
+        background-color: rgba(0, 0, 0, 0.738);
+    }
+}
+@media screen and (max-width: 767px) {
+    .pc_element_album {
+        float: right;
+    }
+    .pc_element_contenu_titre-album {
+        position: absolute;
+    }
+    .pc_element_contenu_spotify {
+        position: absolute;
+        padding-top: 200px;
+    }
+    #fleche, #spotify {
+        padding: 0 34px 0 34px;
+    }
+}
