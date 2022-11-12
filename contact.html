@@ -189,18 +189,11 @@
 <script>
     let form= document.querySelector("form");
     let emailInput=document.querySelector("input[type=email");
-    letsubmitBtn=document.querySelector("button[type=submit]");
-    console.log(emailInput);
-    console.log(submitBtn);
-submitBtn.addEventListener("click", validateForm);
-function validateForm() {
-        let emailValue = emailInput.value;
-
+form.addEventListener("submit", function (){
+event.preventDefault();
         let indexArobas = emailValue.indexOf('@');
         let indexDot = emailValue.indexOf('.');
-
         if (indexArobas !== -1 && indexDot !== -1){
-            form.submit();
         } 
         console.log();
         }
