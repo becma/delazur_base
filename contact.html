@@ -45,7 +45,7 @@
                 </div>
                 <div id="courriel" class="infogeneral_in">
                     <label for="courriel">Adresse courriel</label>
-                    <input class="infogeneral_in_input" type="email" id="adressecourriel" name="courriel" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"requiredminlength="2">
+                    <input class="infogeneral_in_input" type="email" id="adressecourriel" name="courriel" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z](2,4)$"requiredminlength="2">
                 </div>
                 <div id="naissance" class="infogeneral_in">
                     <label for="date">Date de Naissance</label>
@@ -182,25 +182,29 @@
             <!--Cinquieme partie: Boutons de navigation-->
             <div id="boutons-soumission">
                 <button class="boutonform" type="reset" form="contact" value="reset">Réinitialiser</button>
-
+                <button class="boutonform" type="submit" form="contact" value="submit">Soumettre</button>
             </div>
         </form>
-            <!--Ĵavascript form
-            <script>
-                let form = document.querySelector('form');
-                let emailInput = document.querySelector('input[type=email]');
-                form.addEventListener('submit', validateForm);
-                function validateForm() {
-                  event.preventDefault();
-                  let emailValue = emailInput.value;
-                  let indexArobas = emailValue.indexOf('@');
-                  let indexDot = emailValue.indexOf('.');
-                  if (indexArobas !== -1 && indexDot !== -1) {
-                    form.submit()
-                  }
-                  console.log(indexArboas);
-                }
-              </script>
+<!--Javascript
+<script>
+    let form= document.querySelector("form");
+    let emailInput=document.querySelector("input[type=email");
+    letsubmitBtn=document.querySelector("button[type=submit]");
+    console.log(emailInput);
+    console.log(submitBtn);
+submitBtn.addEventListener("click", validateForm);
+function validateForm() {
+        let emailValue = emailInput.value;
+
+        let indexArobas = emailValue.indexOf('@');
+        let indexDot = emailValue.indexOf('.');
+
+        if (indexArobas !== -1 && indexDot !== -1){
+            form.submit();
+        } 
+        console.log();
+        }
+    </script>
 -->
     </main>
     <footer>
