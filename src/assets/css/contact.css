@@ -1,0 +1,374 @@
+form{
+    background-color: #DDB05C;
+    padding: 30px;
+}
+
+legend {
+    text-align: center;
+}
+
+input:not( .couleur_input, .membre) {
+    padding: 15px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom: solid black 1px;
+}
+
+
+.couleur_input {
+    display: block;
+    padding: 0px;
+    margin: 15px;
+}
+
+.infogeneral{
+    width: 450px;
+    margin-top: 30px;
+    border-style: solid;
+    border-color: #D9967A;
+}
+
+.infogeneral_in {
+    margin: 40px 0 0 0;
+}
+
+.infogeneral_in > input, #sitepref {
+    width: 90%;
+}
+
+.adresse{
+    width: 450px;
+    background-color: #D9967A;
+    border: 2px solid #D2818B;
+    margin: 40px auto 40px auto;
+}
+
+.adresse_in {
+    margin: 40px;
+}
+
+.adresse_in_input {
+    width: 93%;
+}
+
+.adresse_in_selection {
+    display: block;
+    width: 80%;
+    background-color: #d9967a00;
+    border: solid black 1px;
+    padding: 15px;
+}
+
+.membre{
+    width: 450px;
+    border-color: #D9967A;
+    border-style: solid;
+}
+
+.gouts {
+    border: solid 0px;
+    margin-bottom: 40px;
+}
+
+.mdp {
+    border: solid 0px;
+    margin: 50px 0 50px 0;
+}
+
+.gouts_in {
+    margin: 40px 0 0 0;
+}
+
+.gouts_in > input {
+    width: 85%;
+}
+
+.gouts_in_input {
+    width: 75%;
+    padding: 15px;
+}
+
+:root {
+    --form-control-color: rebeccapurple;
+}
+
+*,*:before,*:after {
+    box-sizing: border-box;
+}
+
+.membre-pref {
+    margin: 0 35px 0 35px;
+}
+
+.membre-pref-choix {
+    display: grid;
+    grid-template-columns: 1em auto;
+    gap: 0.5em;
+}
+
+.membre-pref-choix > input {
+    width: 75%;
+}
+
+.mdp > input {
+    width: 90%;
+} 
+
+input[type=range] {
+    height: 25px;
+    -webkit-appearance: none;
+    width: 100%;
+}
+input[type=range]:focus {
+    outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 4px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #D779A6;
+    background: #D779A6;
+    border-radius: 50px;
+    border: 1px solid #D779A6;
+}
+input[type=range]::-webkit-slider-thumb {
+    box-shadow: 0px 0px 0px #D779A6;
+    border: 2px solid #D779A6;
+    height: 17px;
+    width: 17px;
+    border-radius: 17px;
+    background: #FFFFFF;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -8px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #D779A6;
+}
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 4px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #D779A6;
+    background: #D779A6;
+    border-radius: 50px;
+    border: 1px solid #D779A6;
+}
+input[type=range]::-moz-range-thumb {
+    box-shadow: 0px 0px 0px #D779A6;
+    border: 2px solid #D779A6;
+    height: 17px;
+    width: 17px;
+    border-radius: 17px;
+    background: #FFFFFF;
+    cursor: pointer;
+}
+input[type=range]::-ms-track {
+    width: 100%;
+    height: 4px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+    background: #D779A6;
+    border: 1px solid #D779A6;
+    border-radius: 100px;
+    box-shadow: 1px 1px 1px #D779A6;
+}
+input[type=range]::-ms-fill-upper {
+    background: #D779A6;
+    border: 1px solid #D779A6;
+    border-radius: 100px;
+    box-shadow: 1px 1px 1px #D779A6;
+}
+input[type=range]::-ms-thumb {
+    margin-top: 1px;
+    box-shadow: 0px 0px 0px #D779A6;
+    border: 2px solid #D779A6;
+    height: 17px;
+    width: 17px;
+    border-radius: 17px;
+    background: #FFFFFF;
+    cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+    background: #D779A6;
+}
+input[type=range]:focus::-ms-fill-upper {
+    background: #D779A6;
+}
+
+#boutons-soumission {
+    margin: 20px;
+    text-align: center;
+}
+
+.boutonform {
+    width: 15rem;
+    background-color: #d2818a00;
+    padding: 15px;
+    border: solid 1px black;
+    margin: 15px;
+}
+
+input[type="color"] {
+	-webkit-appearance: none;
+	border: none;
+	width: 32px;
+	height: 32px;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+	border: none;
+}
+
+@media screen and (min-width: 1200px) {
+
+    .membre {
+        width: 100%;
+    }
+
+    .membre-pref {
+        padding: 25px;
+        display: grid; 		
+        grid-template: 1fr / 1fr 1fr 1fr 1fr;
+        gap: 0px;
+        height: 100%;
+    }
+
+    .infogeneral {
+        width: 100%;
+        display: grid; 
+        grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr;
+        gap: 0px;
+        height: 100%;
+    }
+
+    #prenom {
+        grid-row: 1 / 2;
+        grid-column: 1 / 3;
+    }
+
+    #nom {
+        grid-row: 1 / 2;
+        grid-column: 4 / 6;
+    }
+
+    #courriel {
+        grid-row: 2 / 3;
+        grid-column: 1 / 5;
+    }
+
+    #naissance {
+        grid-row: 3 / 4;
+        grid-column: 1 / 3;
+    }
+
+    #age {
+        grid-row: 3 / 4;
+        grid-column: 4 / 6;
+    }
+
+    #tel {
+        grid-row: 4 / 5;
+        grid-column: 1 / 5;
+    }
+
+    .adresse {
+        width: 100%;
+    }
+
+    .adresse_box {
+        padding-top: 60px;
+        display: grid; 
+        grid-template: 1fr / 1fr 1fr 1fr 1fr 1fr;
+        gap: 0px;
+        height: 100%;
+    }
+
+    .adresse_in_input {
+        width: 100%;
+    }
+
+    .adresse_in_selection {
+        width: 100%;
+    }
+
+    .mdp {
+        width: 100%;
+    }
+
+    #numciv {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+    }
+
+    #rue {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+    }
+
+    #province {
+        grid-row: 1 / 2;
+        grid-column: 3 / 4;
+    }
+
+    #pays {
+        grid-row: 1 / 2;
+        grid-column: 4 / 5;
+    }
+
+    #codepostal {
+        grid-row: 1 / 2;
+        grid-column: 5 / 6;
+    }
+
+    #goutsrange1 {
+        display: grid; 
+        grid-template: 1fr / 1fr 1fr 1fr 1fr;
+        gap: 0px;
+        height: 100%;
+    }
+
+    #couleurpref {
+        margin-top: 40px;
+    }
+
+    #goutsrange2 {
+        display: grid; 
+        grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr 1fr;
+        gap: 0px;
+        height: 100%;
+    }
+
+    #site {
+        grid-row: 1 / 2;
+        grid-column: 1 / 3;
+    }
+
+    #note {
+        grid-row: 1 / 2;
+        grid-column: 4 / 6;
+    }
+
+    #datevisite {
+        grid-row: 2 / 3;
+        grid-column: 1 / 3;
+    }
+
+    #durantceshow {
+        grid-row: 2 / 3;
+        grid-column: 4 / 6;
+    }
+
+    #checkbox {
+        display: grid; 
+        grid-template: 1fr / 1fr 1fr 1fr;
+        gap: 0px;
+        height: 100%
+    }
+}

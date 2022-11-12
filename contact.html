@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DELAZUR</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Damion&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/src/assets/css/app.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="/src/assets/img/delazur_logo.png" alt="Logo de Delazur">
+            <h1 class="visuallyhidden">Delazur</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a class="serif" href="index.html">Accueil</a></li>
+                <li><a class="serif" href="spectacles.html">Spectacles</a></li>
+                <li><a class="serif" href="boutique.html">Boutique</a></li>
+                <li><a class="serif" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="" method="get" class="form" target="_blank">
+            <!--Premiere partie: informations generales- Encadrement rose (CSS)-->
+            <fieldset class="infogeneral">
+                <legend>Informations générales</legend>
+                <div id="prenom" class="infogeneral_in">
+                    <label for="prenom">Prénom</label>
+                    <input class="infogeneral_in_input" type="text" id="prenom" name="prenom" required minlength="2">
+                </div>
+                <div id="nom" class="infogeneral_in">
+                    <label for="nom">Nom de famille</label>
+                    <input class="infogeneral_in_input" type="text" id="nomfamille" name="nom" requiredminlength="2" maxlength="30" size="">
+                </div>
+                <div id="courriel" class="infogeneral_in">
+                    <label for="courriel">Adresse courriel</label>
+                    <input class="infogeneral_in_input" type="email" id="adressecourriel" name="courriel" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z](2,4)$"requiredminlength="2">
+                </div>
+                <div id="naissance" class="infogeneral_in">
+                    <label for="date">Date de Naissance</label>
+                    <input class="infogeneral_in_input" type="date" name="anniversaire" value="yyyy-mm-dd" required>
+                </div>
+                <div id="age" class="infogeneral_in">
+                    <label for="age">Et ton âge ?</label>
+                    <input class="infogeneral_in_input" type="number" id="age" min="01" max="99" required>
+                </div>
+                <div id="tel" class="infogeneral_in">
+                    <label for="numerotel">Numéro de téléphone</label>
+                    <input class="infogeneral_in_input" type="tel" id="numerotel" pattern="[0-9]{3} [0-9]{3} [0-9]{4}">
+                </div>
+            </fieldset>
+            <!--Deuxieme partie: Adresse - Encadrement + fond rose (CSS)-->
+            <fieldset class="adresse">
+                <legend>Adresse</legend>
+                <div class="adresse_box">
+                    <div id="numciv" class="adresse_in">
+                        <label class="adresse_in_label" for="civique">Numéro Civique</label>
+                        <input class="adresse_in_input" type="number" id="numcivique" name="numcivique">
+                    </div>
+                    <div id="rue" class="adresse_in">
+                        <label class="adresse_in_label" for="rue">Rue</label>
+                        <input class="adresse_in_input" type="text" id="rue" name="rue">
+                    </div>
+                    <div id="province" class="adresse_in">
+                        <label class="adresse_in_label" for="province">Province</label>
+                        <select class="adresse_in_selection" name="province"id="province" required>
+                            <option value="AB">Alberta</option>
+                            <option value="CB">Colombie-Britannique</option>
+                            <option value="IPE">Île-du-Prince-Édouard</option>
+                            <option value="MAN">Manitoba</option>
+                            <option value="NB">Nouveau-Brunswick</option>
+                            <option value="NE">Nouvelle-Écosse</option>
+                            <option value="ONT">Ontario</option>
+                            <option value="QC">Québec</option>
+                            <option value="SASK">Saskatchewan</option>
+                            <option value="TNL">Terre-Neuve-et-Labrador</option>
+                            <option value="TNO">Territoire du Nord-Ouest</option>
+                            <option value="YN">Yukon</option>
+                        </select>
+                    </div>
+                    <div id="pays" class="adresse_in">
+                        <label class="adresse_in_label" for="pays">Pays</label>
+                        <input class="adresse_in_input" type="country" id="pays" name="pays" value="Canada">
+                    </div>
+                    <div id="codepostal" class="adresse_in">
+                        <label class="adresse_in_label" for="codepostal">Code Postal</label>
+                        <input class="codepostal" type="text" id="codepostal" name="codepostal" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]">
+                    </div>
+                </div>
+            </fieldset>
+            <!--Troisieme partie: Gouts perso du visiteur- Sans encadrement (CSS)-->
+            <fieldset class="gouts">
+                <div id="goutsrange1" class="gouts">
+                    <div id="couleurpref" class="couleur">
+                        <label for="couleur">Votre couleur préférée?</label>
+                        <input class="couleur_input" type="color" id="choixcouleur" name="couleur" value="">
+                    </div>
+                    <div id="imagepref" class="gouts_in">
+                        <label for="telechargementimage">Vos images préférées?</label>
+                        <input class="gouts_in_input" type="file" name="imagetelecharge" multiple="multiple" accept="image/png" , accept="image/jpeg">
+                    </div>
+                    <div id="moispref" class="gouts_in">
+                        <label for="moisprefere">Votre mois préféré? De quelle année?</label>
+                        <input class="gouts_in_input" type="month" id="mois" name="moisprefere" value="yyyy-dd">
+                    </div>
+                    <div id="semainepref" class="gouts_in">
+                        <label for="semaine">Votre semaine preferée de tous les temps?</label>
+                        <input class="gouts_in_input" type="week" name="semaine" id="semainepreferee" value="yyyy-w01">
+                    </div>
+                </div>
+                <div id="goutsrange2">
+                    <div id="site" div class="gouts_in">
+                        <label class="site" for="url">Un site que nous devons découvrir?</label>
+                        <input id="sitepref" type="url" pattern="https:?//.*">  
+                    </div>
+                    <div id="note" class="gouts_in">
+                        <label label class="note" for="note">Quelle note lui donnez-vous?</label>
+                        <!--Texte en rose (CSS)-->
+                        <input class="gouts_range" type="range" id="volume" name="volume" min="0" max="100" style="width: 80%">                  
+                    </div>
+                    <div id="datevisite" class="gouts_in">
+                        <label for="date">La date et l'heure du show que tu veux venir voir?</label>
+                        <input type="datetime-local" id="date" name="date" value="yyyy-mm-dd, --:-- --">
+                    </div>
+                    <div id="durantceshow" class="gouts_in">
+                        <p id="text">Durant ce show, tu veux...</p>
+                        <div id="checkbox">
+                            
+                            <div id="checkbox1">
+                                <label class="veuxtucheck" for="danser">Danser</label>
+                                <input class="check_ca1" type="checkbox" id="danser" name="danser">
+                            </div>
+                            <div id="checkbox2">
+                                <label class="veuxtucheck" for="groove">Groover</label>
+                                <input class="check_ca2" type="checkbox" id="groove" name="groove">
+                            </div>
+                            <div id="checkbox3">
+                                <label class="veuxtucheck" for="coucher">Me coucher tard</label>
+                                <input class="check_ca3" type="checkbox" id="coucher" name="coucher">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <!--Quatrieme partie: Membre prefere - Encadrement rose (CSS)-->
+            <fieldset class="membre">
+                <legend>Votre membre du groupe préféré?</legend>
+                <div class="membre-pref">
+                    <div class="membre-pref-choix">
+                        <input  type="radio" id="checkbox1" name="membre-pref" value="Alain">
+                        <label  for="alain">Alain Jasmine</label>
+                    </div>
+                    <div class="membre-pref-choix">
+                        <input  type="radio" id="jacques" name="membre-pref" value="Jacques">
+                        <label  for="jacques">Jacques Danger</label>
+                    </div>
+                    <div class="membre-pref-choix">
+                        <input  type="radio" id="dove" name="membre-pref" value="Dove">
+                        <label  for="dove">Dove</label>
+                    </div>
+                    <div class="membre-pref-choix">
+                        <input type="radio" id="dr" name="membre-pref" value="Dr">
+                        <label  for="dr"> Dr Homme</label>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="mdp">
+                <label for="mdp">Mot de paaaaaaaaaasse?</label>
+                <input type="password" id="mdp" name="mdp" pattern="Kaput Draconis">
+            </fieldset>
+            <!--Cinquieme partie: Boutons de navigation-->
+            <div id="boutons-soumission">
+                <button class="boutonform" type="reset" form="contact" value="reset">Réinitialiser</button>
+                <button class="boutonform" type="submit" form="contact" value="submit">Soumettre</button>
+            </div>
+        </form>
+<!--Javascript
+<script>
+    let form= document.querySelector("form");
+    let emailInput=document.querySelector("input[type=email");
+form.addEventListener("submit", function (){
+event.preventDefault();
+        let indexArobas = emailValue.indexOf('@');
+        let indexDot = emailValue.indexOf('.');
+        if (indexArobas !== -1 && indexDot !== -1){
+        } 
+        console.log();
+        }
+    </script>
+-->
+    </main>
+    <footer>
+        <div>
+            <img src="/src/assets/img/delazur_logo.png" alt="Logo Delazur">
+        </div>
+        <div>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="spectacles.html">Spectacles</a></li>
+                <li><a href="boutique.html">Boutique</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.instagram.com/delazurband/" aria-label="Instagram" target="_blank"><i
+                            class="fab fa-instagram"></i></a></li>
+                <li><a href="https://music.apple.com/us/artist/delazur/1502322364" aria-label="Apple Music"
+                        target="_blank"><i class="fab fa-apple"></i></a></li>
+                <li><a href="https://music.youtube.com/channel/UCgWAueQ2PGlzKfPIjrtn05g" aria-label="Youtube Music"
+                        target="_blank"><i class="far fa-play-circle"></i></a></li>
+                <li><a href="https://www.facebook.com/delazurband/" aria-label="Facebook" target="_blank"><i
+                            class="fab fa-facebook"></i></a></li>
+                <li><a href="https://open.spotify.com/artist/1YG9iUkHCKcIEopGLn5QYb" aria-label="Spotify"
+                        target="_blank"><i class="fab fa-spotify"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCNU_NVl0zzl5wluB0_9fNoA" aria-label="Youtube"
+                        target="_blank"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="https://fontawesome.com/icons/bandcamp?style=brands" aria-label="Bandcamp"
+                        target="_blank"><i class="fab fa-bandcamp"></i></a></li>
+            </ul>
+        </div>
+        <div>
+            <p>Production en médias interactifs</p>
+            <p>GR.07 - Novembre 2022</p>
+        </div>
+    </footer>
+</body>
+
+</html>
